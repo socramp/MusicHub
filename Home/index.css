@@ -1,0 +1,33 @@
+a {
+    display: flex;
+}
+
+header {
+    background-color: var(--fundoAzul);
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 100px 20px;
+    gap: 50px;
+}
+
+.itens-cabecalho {
+    
+}
+
+nav{
+    width: 1200px;
+    height: 240px;
+    position: relative fixed;
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    grid-template-areas: "topo"
+                        "conteudo"
+                        "sair";
+    background-color: var(--fundoAzul);
+}
+.topo{
+    position: relative;
+    /* margin: 5px 73px 74px 73px; */
+}
+
+
