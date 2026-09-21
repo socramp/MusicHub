@@ -14,8 +14,9 @@ body {
 :root {
     --fundoAzul: #21243A;
     --vinho: #731432;
-    --corDestaque: #D90B4F;
+    --destaque: #D90B4F;
     --branquinho: #F7FBFC;
+    --branco: #FFFFFF;
 }
 
 
