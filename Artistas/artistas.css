@@ -1,0 +1,558 @@
+header {
+    position: relative;
+}
+
+.header {
+    background-color: var(--fundoAzul);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px 100px 20px;
+    gap: 50px;
+    width: 100%;
+    position: absolute;
+}
+
+#input-buscar {
+    border: none;
+    width: 240px;
+    height: 45px;
+    border-radius: 30px;
+    padding: 10.5px 145px 10.5px 30px;
+    background-color: #4e5060;
+    color: var(--branco);
+    font-size: 15px;
+    transition: 0.3s ease;
+
+    background-image: url("../img/icones/lupa.svg");
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 200px center;
+
+}
+
+#input-buscar::placeholder {
+    color: #FFFFFF95;
+    font-size: 15px;
+}
+
+#input-buscar:focus {
+    outline: none;
+    /* border-color: var(--vinho); */
+    box-shadow: 0 0 10px #D90B4F85;
+}
+
+
+#menu-img {
+    width: 33px;
+}
+
+/*========== */
+nav {
+    box-shadow: 7px 7px #00000045;
+    border-radius: 0 30px 30px 0;
+    position: fixed;
+    background-color: var(--fundoAzul);
+    height: 100vh;
+
+}
+
+nav h1 {
+    padding-top: 25px;
+    font-size: 17px;
+    color: var(--branco);
+}
+
+nav h3 {
+    font-size: 15px;
+    color: var(--branco);
+    margin-top: 30px;
+}
+
+nav a {
+    padding: 7px 0 5px 0;
+    display: flex;
+    justify-content: left;
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 12px;
+}
+
+nav img {
+    height: 19px;
+    padding-right: 5px;
+}
+
+.topo {
+    /* position: relative; */
+    padding: 0 73px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 73px;
+}
+
+/*==============FIM NAV VERTICAL=========*/
+
+/**/
+.link {
+    justify-content: center;
+    color: red;
+    align-items: center;
+}
+
+/* ===== PRINCIPA (DO ARTISTA) ===== */
+main {
+    margin-left: 270px;
+    padding-top: 85px;
+
+    padding-left: 45px;
+    padding-right: 45px;
+
+    width: calc(100% - 270px);
+    color: var(--branco);
+}
+
+/* ======== BOTÃO VOLTAR =============== */
+.voltar {
+    margin-bottom: 10px;
+}
+
+.voltar button {
+    width: 90px;
+    height: 35px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: var(--destaque);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.voltar button img {
+    width: 18px;
+    height: 18px;
+}
+
+/* ======== ARTISTA ============ */
+.artistas {
+    width: 100%;
+}
+
+.capa-artista {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.capa-artista img {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+}
+
+/* ================ PLAYER ======================= */
+.player {
+    width: 100%;
+    position: relative;
+}
+
+/* ======== MÚSICA ATUAL ======== */
+.musica-atual {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    margin-top: -55px;
+
+    z-index: 2;
+}
+
+.musica-atual>img {
+    width: 90px;
+    height: 90px;
+
+    background-size: cover;
+}
+
+.musica-atual div {
+    padding-left: 12px;
+}
+
+.musica-atual p {
+    margin: 3px 0;
+
+    font-size: 11px;
+
+    color: var(--branco);
+}
+
+.musica-atual h1 {
+    margin: 3px 0;
+    font-size: 15px;
+    color: var(--branco);
+}
+
+/* =========== PERIODO MÚSICA =============== */
+.periodoMusica {
+    height: 4px;
+
+    margin-left: 90px;
+    margin-top: -4px;
+
+    background-color: var(--cinza);
+}
+
+.periodo-atual {
+    width: 35%;
+    height: 4px;
+
+    position: relative;
+    background-color: var(--destaque);
+}
+
+.periodo-atual::after {
+    content: "";
+    position: absolute;
+
+    right: -5px;
+    top: -3px;
+
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+    background-color: var(--destaque);
+}
+
+/* =========== CONTROLES ============ */
+.controles {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-left: 105px;
+    margin-top: 12px;
+}
+
+.controles button {
+    border: none;
+    background: transparent;
+
+    padding: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.controles button img {
+    align-items: center;
+    width: 19px;
+    height: 19px;
+}
+
+/* PLAY */
+#play {
+    width: 46px;
+    height: 46px;
+
+    border-radius: 50%;
+    border: 2px solid #e92a70;
+    background-color: var(--destaque);
+}
+
+/* MOSTRAR LETRA */
+.controles .letra {
+
+    margin-left: auto;
+    padding: 10px 25px;
+
+    border-radius: 5px;
+    background-color: var(--destaque);
+    color: var(--branco);
+
+    cursor: pointer;
+    font-size: 11px;
+}
+
+/* ============= ÁLBUNS E SINGLES POPULARES ============== */
+.populares {
+    width: 100%;
+    margin-top: 45px;
+}
+
+/* TÍTULO */
+.titulo-populares {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--cinza);
+}
+
+.titulo-populares h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.titulo-populares button {
+
+    margin-left: auto;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+
+    background-color: var(--destaque);
+    color: var(--branco);
+    cursor: pointer;
+    font-size: 11px;
+}
+
+/*  ÁLBUNS + CARROSSEL */
+.carrosselVertical {
+    width: 100%;
+
+    display: flex;
+
+    margin-top: 25px;
+}
+
+/* ÁLBUNS */
+.capas {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+
+    gap: 35px;
+    padding-right: 30px;
+}
+
+.album {
+    display: grid;
+    grid-template-columns: 25px 120px;
+    column-gap: 12px;
+    align-items: center;
+}
+
+.album span {
+    font-size: 12px;
+    text-align: center;
+}
+
+.album img {
+    display: block;
+    width: 120px;
+    height: 120px;
+
+    object-fit: cover;
+}
+
+.album p {
+    grid-column: 2;
+    margin: 6px 0 0;
+
+    font-size: 9px;
+    text-align: center;
+}
+
+#ano {
+    grid-column: 2;
+    font-size: 8px;
+    text-align: center;
+}
+
+/* =====================
+   LISTA / CARROSSEL VERTICAL
+======================== */
+
+.lista-musicas {
+    width: 72%;
+    height: 350px;
+    padding-left: 40px;
+    border-left: 1px solid #5b5e72;
+    overflow: hidden;
+}
+
+.musicasPopulares {
+    width: 100%;
+    height: 100%;
+
+    overflow-y: auto;
+    padding-right: 10px;
+
+    scrollbar-width: thin;
+    scrollbar-color: var(--destaque) transparent;
+}
+
+/* BARRA DO CARROSSEL */
+
+.musicasPopulares::-webkit-scrollbar {
+    width: 5px;
+}
+
+.musicasPopulares::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.musicasPopulares::-webkit-scrollbar-thumb {
+    background-color: var(--destaque);
+
+    border-radius: 10px;
+}
+
+/* =================== MÚSICAS ===================== */
+.musica {
+    width: 100%;
+    min-height: 65px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+    padding: 8px 5px;
+}
+
+/* ONDA */
+.onda img {
+    width: 20px;
+    height: 24px;
+    color: var(--destaque);
+
+    /* font-size: 5px; */
+    text-align: center;
+}
+
+/* CAPA DA MÚSICA */
+.musica>img {
+    display: block;
+
+    width: 52px;
+    height: 52px;
+
+    flex-shrink: 0;
+
+    object-fit: cover;
+}
+
+/* INFORMAÇÕES */
+.info {
+    flex: 2;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.info strong {
+    font-size: 11px;
+    color: var(--branco);
+}
+
+.info span {
+    margin-top: 4px;
+    font-size: 9px;
+    color: var(--branco);
+}
+
+/* TEMPO */
+.tempo {
+    font-size: 10px;
+    color: var(--branco);
+}
+
+/* CORAÇÃO */
+.coracao {
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    padding: 0;
+
+    border: none;
+    background: transparent;
+    color: var(--destaque);
+
+    cursor: pointer;
+}
+
+/* TRÊS PONTINHOS */
+.mais {
+    width: 20px;
+    padding: 0;
+    font-size: 20px;
+    border: none;
+
+    background: transparent;
+    color: var(--branco);
+    cursor: pointer;
+}
+
+/* ============ SOBRE ============== */
+.sobre {
+    width: 100%;
+    margin-top: 35px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    border-top: 1px solid var(--cinza);
+}
+
+.sobre h2 {
+    margin: 0 0 18px;
+    font-size: 18px;
+}
+
+/* IMAGEM DO SOBRE */
+.sobre>img {
+    display: block;
+
+    width: 75%;
+    max-width: 700px;
+    height: 300px;
+    margin: 0 auto 25px;
+
+    background-size: cover;
+}
+
+/* TEXTOS */
+.sobre p {
+    width: 90%;
+    max-width: 900px;
+
+    margin: 10px auto;
+    font-size: 13px;
+    line-height: 1.6;
+
+    color: var(--branco);
+}
+
+/* LISTA */
+.sobre ul {
+    width: 90%;
+    max-width: 900px;
+
+    margin: 18px auto;
+    padding-left: 25px;
+}
+
+.sobre li {
+    margin-bottom: 12px;
+    font-size: 13px;
+    line-height: 1.6;
+
+    color: var(--branco);
+}

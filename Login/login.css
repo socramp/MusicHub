@@ -1,0 +1,36 @@
+body {
+    background-color: #21243A;
+}
+
+.tela-login {
+    border: 5px solid var(--vinho);
+    margin: 4rem;
+}
+
+.cabecalho {
+    display: flex;
+}
+
+.texto-cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texto-cabecalho h1 {
+    color: #FFFFFF;
+    font-size: 60px;
+}
+
+.texto-cabecalho p {
+    color: #FFFFFF;
+}
+
+input {
+    border: 2px solid #731432;
+    border-radius: 10px;
+    color: #731432;
+    background-color: var(--fundo-azul);
+    padding: 12px 16px;
+    outline: none; /*serve para tirar a borda do navegador :) */
+}

@@ -1,0 +1,208 @@
+header {
+    background-color: var(--fundoAzul);
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 20px 100px;
+}
+
+.itens-visitantes {
+    display: flex;
+    gap: 50px;
+}
+
+.itens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+/* ========================================================================================================================= */
+/* CARROSSEL */
+.carrossel {
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+
+    overflow: hidden;
+}
+
+.carrossel-imagens {
+    display: flex;
+
+    height: 100%;
+
+    transition: transform 0.7s ease;
+}
+
+
+/* MUITO IMPORTANTE */
+
+.carrossel-imagens img {
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+
+    flex: 0 0 100%;
+
+    object-fit: cover;
+}
+
+
+/* BOTÕES */
+
+.carrossel-botao {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(0, 0, 0, 0.45);
+    color: white;
+
+    font-size: 1.5rem;
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    transition: 0.3s;
+}
+
+
+.carrossel-botao:hover {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+
+.anterior {
+    left: 25px;
+}
+
+
+.proximo {
+    right: 25px;
+}
+
+
+/* BOLINHAS */
+
+.carrossel-indicadores {
+    position: absolute;
+
+    bottom: 25px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 8px;
+
+    z-index: 10;
+}
+
+
+.indicador {
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.45);
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.indicador.ativo {
+    background: white;
+
+    transform: scale(1.3);
+}
+/* ========================================================================================================================= */
+
+.traco {
+    display: block;
+
+    background-color: white;
+
+    height: 1px;
+
+    margin: 50px 100px;
+}
+
+/* ========================================================================================================================= */
+/* = */
+/* ========================================================================================================================= */
+
+/* ========================================================================================================================= */
+/* SOBRE NÓS */
+.h2 {
+    color: var(--destaque);
+    display: flex;
+    justify-content: center;
+}
+
+.textao {
+    background-color: var(--destaque);
+    color: white;
+
+    border-radius: 10px;
+    margin: 50px 220px;
+    padding: 20px;
+}
+/* ========================================================================================================================= */
+
+/* ========================================================================================================================= */
+/* FOOTER */
+.footer {
+    background-color: var(--destaque);
+    padding: 50px 100px;
+    color: #EEEEEE;
+}
+
+.footer-cima {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-cima-dir {
+    display: grid;
+    
+}
+
+.traco2 {
+    display: block;
+
+    background-color: white;
+
+    width: 100%;
+    height: 1px;
+
+    margin: 20px 0;
+}
+
+.footer-baixo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.esq {
+    display: flex;
+    gap: 50px;
+}
+/* ========================================================================================================================= */

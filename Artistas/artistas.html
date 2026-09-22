@@ -7,8 +7,335 @@
     <link rel="stylesheet" href="../Global/global.css">
     <link rel="stylesheet" href="artistas.css">
     <link rel="shortcut icon" href="../img/logoMusicHub.png" type="image/x-icon">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body>
-    
+
+    <header>
+        <!-- CABEÇALHO -->
+        <div class="header">
+            <input type="text" placeholder="Buscar" id="input-buscar">
+            
+            <a href="" id="menu">
+                <img id="menu-img" src="../img/icones/menu.svg" alt="">
+            </a>
+        </div>
+
+ <!-- LATERAL -->
+         <nav>
+            <div class="topo">
+                <h1>MusicHub</h1>
+            </div>
+
+            <div class="conteudo">
+                <h3 class="item-menu">Menu</h3>
+                <a href="../Home/index.html" class="item-menu ativo">
+                    <img src="../img/icones/exploreIcon.svg" alt="">
+                    Explore
+                </a>
+                <a href="../Generos/genero.html" class="item-menu">
+                    <img src="../img/icones/generoIcon.svg" alt="">
+                    Gênero
+                </a>
+                <a href="../Álbuns/albuns.html" class="item-menu">
+                    <img src="../img/icones/albunsIcon.svg" alt="">
+                    Álbuns
+                </a>
+                <a href="../Artistas/artistas.html" class="item-menu">
+                    <img src="../img/icones/artistasIcon.svg" alt="">
+                    Artistas
+                </a>
+                <a href="../Social/social.html" class="item-menu">
+                    <img src="../img/icones/socialIcon.svg" alt="">
+                    Social
+                </a>
+
+                <h3 class="item-menu">Biblioteca</h3>
+                <a href="" class="item-menu">
+                    <img src="../img/icones/recentesIcon.svg" alt="">
+                    Recentes
+                </a>
+                <a href="../Playrists/playrist.html" class="item-menu">
+                    <img src="../img/icones/baixadosIcon.svg" alt="">
+                    Baixados
+                </a>
+                <a href="../Playrists/playrist.html" class="item-menu">
+                    <img src="../img/icones/favoritosIcon.svg" alt="">
+                    Favoritos
+                </a>
+
+                <h3 class="item-menu">Playlists</h3>
+                <a href="" class="item-menu">
+                    <img src="../img/icones/favoritosIcon.svg" alt="">
+                    Favoritos
+                </a>
+                <a href="" class="item-menu">
+                    <img src="../img/icones/iconePlayrist.png" alt="">
+                    Playlist 1
+                </a>
+                <a href="" class="item-menu">
+                    <img src="../img/icones/iconePlayrist.png" alt="">
+                    Playlist 2
+                </a>
+            </div>
+        </nav>
+</header>
+
+<!-- PRINCIPAL ARISTA --> 
+ <main> 
+   <div class="voltar">
+        <button><img src="../img/icones/sair.svg" alt=""></button>
+    </div>
+
+    <section class="artistas">
+        <div class="capa-artista">
+            <img src="../img/img-pgArtista.png" alt="Artista: Ariana Grande">
+        </div>
+
+        <div class="player">
+            <div class="musica-atual">
+                <img src="../img/img-musica.png" alt="Capa da música: Hate That I Made You Love Me">
+                <div>
+                    <p>Trend Music #1</p>
+                    <h1>Hate That I Made You Love Me - Ariana Grande</h1>
+                    <p>Petal</p>
+                </div>
+            </div>
+
+            <!-- PERIODO MUSICA -->
+            <div class="periodoMusica">
+                <div class="periodo-atual">
+                </div>
+            </div>
+
+            <!-- CONTROLES -->
+            <div class="controles">
+                <button id="favoritos"><img src="../img/icones/favoritosIcon.svg" alt=""></button>
+
+                <button id="aleatorio"><img src="../img/icones/btnAleatorio.svg" alt=""></i></button>
+
+                <button id="retoceder"><img src="../img/icones/btnPassarEsquerda.svg" alt=""></i></button>
+            
+                <button id="play"><img src="../img/icones/btnPlay.svg" alt=""></i></button>
+                
+                <button id="avancar"><img src="../img/icones/btnPassarDireita.svg" alt=""></i></button>
+
+                <button id="repeat"> <img src="../img/icones/ion_repeat.svg" alt=""></button>
+
+                <button class="letra">
+                    Mostrar letra
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ALBUNS E SINGLES -->
+    <section class="populares">
+        <div class="titulo-populares">
+            <h2>Álbuns e Singles Populares</h2>
+            <button>Ver catálogo</button>
+        </div>
+
+    <div class="carrosselVertical">
+
+            <!-- ALBUNS -->
+            <div class="capas">
+
+                <div class="album">
+                    <span>1</span>
+                    <img src="../img/img-capaTUN.png">
+                    <p>Thank U, Next</p>
+                    <span id="ano">2019</span>
+                </div>
+
+                <div class="album">
+                    <span>1</span>
+                    <img src="../img/img-capaTUN.png">
+                    <p>7 Rings</p>
+                    <span id="ano">2019</span>
+                </div>
+
+            </div>
+
+            <!-- CARROSSEL VERTICAL -->
+            <div class="lista-musicas">
+                <div class="musicasPopulares">
+
+                    <!-- MÚSICAS -->
+                    <div class="musica">
+                        <span class="onda"> <img src="../img/icones/tocandoMusica.svg" alt=""></span>
+                        <img src="../img/img-capaTUN.png">
+                          
+                        <div class="info">
+                            <strong>7 Rings</strong>
+                            <span>Ariana Grande</span>
+                        </div>
+
+                        <span class="tempo">3:45</span>
+                        <button class="coracao"> <img src="../img/icones/favoritosIcon.svg"></button>
+                        <button class="mais">⋮</button>
+                    </div>
+
+                    <div class="musica">
+                        <span class="onda"><img src="../img/icones/tocandoMusica.svg" alt=""></span>
+                        <img src="../img/img-capaTUN.png">
+
+                        <div class="info">
+                            <strong>Thank U, Next</strong>
+                            <span>Ariana Grande</span>
+                        </div>
+
+                        <span class="tempo">2:58</span>
+                        <button class="coracao"> <img src="../img/icones/favoritosIcon.svg"></button>
+                        <button class="mais">⋮</button>
+                    </div>
+
+                    <div class="musica">
+                        <span class="onda"><img src="../img/icones/tocandoMusica.svg" alt=""></span>
+                        <img src="../img/img-capaITY.png">
+
+                        <div class="info">
+                            <strong>Into You</strong>
+                            <span>Ariana Grande</span>
+                        </div>
+
+                        <span class="tempo">4:04</span>
+                        <button class="coracao"> <img src="../img/icones/favoritosIcon.svg"></button>
+                        <button class="mais">⋮</button>
+                    </div>
+
+                    <div class="musica">
+                        <span class="onda"><img src="../img/icones/tocandoMusica.svg" alt=""></span>
+                        <img src="../img/img-capaITY.png">
+
+                        <div class="info">
+                            <strong>Side to Side (feat. Nicki Minaj)</strong>
+                            <span>Ariana Grande</span>
+                        </div>
+
+                        <span class="tempo">3:46</span>
+                        <button class="coracao"> <img src="../img/icones/favoritosIcon.svg"></button>
+                        <button class="mais">⋮</button>
+                    </div>
+
+                    <div class="musica">
+                        <span class="onda"><img src="../img/icones/tocandoMusica.svg" alt=""></span>
+                     <img src="../img/img-capaNTLC.png">
+
+                        <div class="info">
+                            <strong>No Tears Left to Cry</strong>
+                            <span>Ariana Grande</span>
+                        </div>
+
+                        <span class="tempo">3:25</span>
+                        <button class="coracao"> <img src="../img/icones/favoritosIcon.svg"></button>
+                        <button class="mais">⋮</button>
+                    </div>
+
+                    <div class="musica">
+                        <span class="onda"><img src="../img/icones/tocandoMusica.svg" alt=""></span>
+                     <img src="../img/img-capaOLT.png">
+
+                        <div class="info">
+                            <strong>Problem (feat. Iggy Azalea)</strong>
+                            <span>Ariana Grande</span>
+                        </div>
+
+                        <span class="tempo">3:14</span>
+                        <button class="coracao"> <img src="../img/icones/favoritosIcon.svg"></button>
+                        <button class="mais">⋮</button>
+                    </div>
+
+                    <div class="musica">
+                        <span class="onda"><img src="../img/icones/tocandoMusica.svg" alt=""></span>
+                     <img src="../img/img-capaOLT.png">
+
+                        <div class="info">
+                            <strong>One Last Time</strong>
+                            <span>Ariana Grande</span>
+                        </div>
+
+                        <span class="tempo">3:14</span>
+                        <button class="coracao"> <img src="../img/icones/favoritosIcon.svg"></button>
+                        <button class="mais">⋮</button>
+                    </div>
+
+                    <div class="musica">
+                        <span class="onda"><img src="../img/icones/tocandoMusica.svg" alt=""></span>
+                     <img src="../img/img-capaES.png">
+
+                        <div class="info">
+                            <strong>We Can't Be Friends (wait for your love)</strong>
+                            <span>Ariana Grande</span>
+                        </div>
+
+                        <span class="tempo">3:48</span>
+                        <button class="coracao"> <img src="../img/icones/favoritosIcon.svg"></button>
+                        <button class="mais">⋮</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SOBRE -->
+    <section class="sobre">
+        <h2>Sobre a artista</h2>
+        <img
+            src="../img/img-sobreArtista.png" alt="Imagem da artista em uma apresentação">
+
+        <p>
+            Voz inconfundível, alcance vocal impressionante de quatro oitavas,
+            uso marcante do registro de apito (whistle) e uma habilidade única
+            de transitar entre o pop refinado e o R&B moderno: Ariana Grande
+            se consolidou como uma das maiores superestrelas da música global
+            da sua geração.
+        </p>
+        <p>
+            Sua trajetória é marcada por grandes momentos:
+        </p>
+
+        <ul>
+            <li>
+                <strong>Pioneirismo:</strong>
+                Estreou no topo das paradas com Yours Truly (2013)
+                e dominou o cenário global com hits como "Problem"
+                e "Bang Bang" em My Everything (2014).
+            </li>
+
+            <li>
+                <strong>Aclamação:</strong>
+                Quebrou recordes de streaming e venceu o Grammy
+                com a sequência de sucessos de Sweetener (2018)
+                e Thank U, Next (2019).
+            </li>
+
+            <li>
+                <strong>Versatilidade:</strong>
+                Explorou sonoridades mais introspectivas nos álbuns
+                Positions (2020) e eternal sunshine (2024),
+                além de brilhar nos cinemas na adaptação de Wicked.
+            </li>
+
+            <li>
+                <strong>Top 3 Histórico da Billboard (Hot 100):</strong>
+              Foi a primeira artista solo na história a ocupar simultaneamente o 1º, 2º e 3º lugar da 
+              parada americana com "7 rings", "break up with your girlfriend, i'm bored" e "thank u, next" 
+              — feito antes alcançado apenas pelos Beatles
+            </li>
+
+            <li>
+                <strong>Recordes no Spotify:</strong>
+               Tornou-se a primeira mulher a ultrapassar a marca de 100 milhões e 120 milhões de ouvintes
+                mensais na plataforma, além de ter sido a primeira artista feminina com múltiplos álbuns ultrapassando 2 bilhões de reproduções cada.
+            </li>
+
+        </ul>
+    </section>
+
+</main>
 </body>
 </html>

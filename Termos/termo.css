@@ -1,0 +1,73 @@
+nav{
+     display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+    color: var(--destaque);
+    font-size: 18px;
+
+    padding: 10px 0  70px 30px;
+}
+
+.conteudo{
+    padding: 0 150px;
+    color: var(--branco);
+}
+
+.conteudo h2{
+    font-size: 30px;
+}
+
+.conteudo h3{
+    font-size: 22px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+.conteudo h4{
+    padding-top: 30px;
+    font-weight: 500;
+}
+
+.conteudo p{
+    font-weight: 100;
+    padding: 0 0 15px 0;
+}
+
+.conteudo ul{
+    font-size: 15px;
+    font-weight: 100;
+    padding-top: 10px;
+}
+
+.conteudo li{
+    padding-top: 2px ;
+}
+/*=================================================================*/
+.voltar-home{
+    padding: 15px 72px;
+    margin-top: 50px;
+    align-items: center;
+
+    color: var(--branco);
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    background-color: var(--destaque);
+    border-radius: 10px;
+
+    margin: 30% 37%;
+}
+span {
+    display: block;
+    width: 90%;
+    height: 1px;
+    background-color: var(--branco);
+    margin: 70px 6%;
+}
+   
+.voltar-home:hover{
+    background-color: var(--vinho);
+    box-shadow: 0 0 10px #D90B4F85;
+}
