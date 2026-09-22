@@ -1,0 +1,96 @@
+body {
+    background-color: var(--fundoAzul);
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tela-login {
+    border: 3px solid var(--vinho);
+    margin: 3rem;
+}
+
+.cabecalho {
+    display: flex;
+}
+
+.cabecalho img {
+    padding: 2.5rem;
+}
+
+.texto-cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.texto-cabecalho h1 {
+    padding-bottom: 0.7rem;
+}
+
+.texto-cabecalho h1 {
+    color: var(--branquinho);
+    font-size: 60px;
+}
+
+.texto-cabecalho p {
+    color: var(--branquinho);
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    
+}
+
+.campo label{
+    color: var(--branquinho);;
+}
+
+input {
+    width: 500px;
+    height: 50px;
+    border: 3px solid var(--vinho);
+    border-radius: 10px;
+    color: var(--vinho);
+    background-color: var(--fundo-azul);
+    padding: 12px 16px;
+    outline: none; /*serve para tirar a borda do navegador :) */
+    margin-top: 10px;
+    
+}
+
+.botao-entrar {
+    width: 450px;
+    height: 50px;
+    margin: 30px;
+    background-color: #D90B4F;
+    color: var(--branquinho);
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: transform 0.2s;
+}
+
+.botao-entrar:hover {
+    cursor: pointer;
+    background-color: #A6083C;
+    transform: translateY(-3px);
+}
+
+.texto-cadastro {
+    color: var(--branquinho);
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.texto-cadastro a{
+    color: #A6083C;
+}
