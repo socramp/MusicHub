@@ -42,7 +42,6 @@ header {
     box-shadow: 0 0 10px #D90B4F85;
 }
 
-
 #menu-img {
     width: 33px;
 }
@@ -92,7 +91,7 @@ nav img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 73px;
+
 }
 
 /*==============FIM NAV VERTICAL=========*/
@@ -119,6 +118,7 @@ main {
 /* ======== BOTÃO VOLTAR =============== */
 .voltar {
     margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .voltar button {
@@ -148,16 +148,14 @@ main {
 }
 
 .capa-artista {
-    width: 100%;
-    height: 350px;
+    width: 90%;
+    height: 90%;
     overflow: hidden;
+
 }
 
 .capa-artista img {
-    display: block;
-    width: 100%;
-    height: 100%;
-
+     width: 100%;
     background-size: cover;
 }
 
@@ -242,7 +240,7 @@ main {
 
     gap: 10px;
 
-    margin-left: 105px;
+    margin-left: 430px;
     margin-top: 12px;
 }
 
@@ -260,8 +258,8 @@ main {
 
 .controles button img {
     align-items: center;
-    width: 19px;
-    height: 19px;
+    width: 20px;
+    height: 20px;
 }
 
 /* PLAY */
@@ -520,9 +518,9 @@ main {
 .sobre>img {
     display: block;
 
-    width: 75%;
+    width: 400%;
     max-width: 700px;
-    height: 300px;
+    height: 450px;
     margin: 0 auto 25px;
 
     background-size: cover;
@@ -538,6 +536,7 @@ main {
     line-height: 1.6;
 
     color: var(--branco);
+    margin-top: 30px;
 }
 
 /* LISTA */
