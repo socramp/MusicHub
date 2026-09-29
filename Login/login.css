@@ -17,25 +17,41 @@ body {
 .tela-login {
     border: 3px solid var(--vinho);
     margin: 3rem;
+   
 }
 
 .cabecalho {
     display: flex;
-    flex-direction: center;
     align-items: center;
+    text-align: center;
+    position: relative;
+    width: 100%;
 }
 
 .imagem-cabecalho {
+    position: absolute;
+    margin-top: 2.5rem;
+}
+
+.texto-cabecalho-cadastro {
+    width: 100%;
+    margin-right: 12.5rem;
+}
+
+.texto-cabecalho-login {
     display: flex;
-    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
 }
 
 .texto-cabecalho {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     align-items: center;
     padding: 2rem;
+   
 }
 
 .texto-cabecalho h1 {
@@ -61,8 +77,15 @@ body {
 .campo label{
     color: var(--branquinho);;
 }
+.input-esquerda {
+    margin-left: 7rem;
+}
 
-input {
+.input-direita {
+    margin-right: 7rem;
+}
+
+.input-form {
     width: 500px;
     height: 50px;
     border: 3px solid var(--vinho);
@@ -72,22 +95,23 @@ input {
     padding: 12px 16px;
     outline: none; /*serve para tirar a borda do navegador :) */
     margin-top: 10px;
+    color: #CCCCCC;
     
 }
 
-.botao-entrar {
+.botao-entrar, .botao-cadastrar {
     width: 450px;
     height: 50px;
     margin: 30px;
 }
 
-.texto-cadastro {
+.texto-link {
     color: var(--branquinho);
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 45px;
+    margin-bottom: 70px;
 }
 
-.texto-cadastro a{
+.texto-link a{
     color: #A6083C;
 }
 
@@ -97,4 +121,28 @@ span {
     height: 1px;
     background-color: var(--branco);
     margin: 35px 6%;
+}
+
+
+.botoes {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-termos {
+    color: var(--branquinho);
+}
+
+.link-termos a {
+    color: #A6083C;
+}
+
+input[type="checkbox"] {
+
+    border-radius: 50%;
+    cursor: pointer;
+    accent-color: var(--destaque);
 }
