@@ -1,15 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+/* Reset Global */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-
-  background-color: var(--fundoAzul);
-  font-family: 'Mulish', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -19,153 +14,158 @@ body {
     --branquinho: #F7FBFC;
     --branco: #FFFFFF;
     --cinza: #55596d;
+    --largura-aside: 240px;
+    --altura-header: 80px;
 }
 
-/*----------------------------------Cabeçalho-------------------------------*/
+body {
+    background-color: var(--fundoAzul);
+    font-family: 'Mulish', sans-serif;
+    color: var(--branco);
+}
+
+/*----------------------------------Cabeçalho Fixo-------------------------------*/
 .header {
     background-color: var(--fundoAzul);
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 20px 100px 20px;
-    gap: 50px;
-    width: 100%;
+    padding: 0 50px;
+    gap: 30px;
+    height: var(--altura-header);
+    
+    /* Fixa o topo à direita do Aside */
     position: fixed;
-
-        box-shadow: 7px 7px #00000045;
-
+    top: 0;
+    right: 0;
+    width: calc(100% - var(--largura-aside));
+    z-index: 99;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-#input-buscar{
+#input-buscar {
     border: none;
     width: 240px;
-    height: 45px;
+    height: 40px;
     border-radius: 30px;
-    padding: 10.5px 145px 10.5px 30px;
+    padding: 10px 45px 10px 20px;
     background-color: #4e5060;
     color: var(--branco);
-    font-size: 15px;
+    font-size: 14px;
     transition: 0.3s ease;
     
     background-image: url("../img/icones/lupa.svg");
     background-repeat: no-repeat;
     background-size: 18px;
-    background-position: 200px center;
-
+    background-position: calc(100% - 15px) center;
 }
 
-#input-buscar::placeholder{
-    color: #FFFFFF95;
-    font-size: 15px;
+#input-buscar::placeholder {
+    color: rgba(255, 255, 255, 0.6);
 }
 
 #input-buscar:focus {
     outline: none;
-    /* border-color: var(--vinho); */
-    box-shadow: 0 0 10px #D90B4F85;
+    box-shadow: 0 0 10px rgba(217, 11, 79, 0.5);
 }
 
-#menu-img{
-    width: 33px;
+#menu-img {
+    width: 30px;
 }
 
-/*=========================INICIO NAV VERTICAL========================== */
-nav{
-    box-shadow: 7px 7px #00000045;
-    border-radius: 0 30px 30px 0;
+/*----------------------------------Menu Lateral Fixo-------------------------------*/
+aside {
     position: fixed;
-    background-color: var(--fundoAzul);
+    top: 0;
+    left: 0;
     height: 100vh;
-    
+    width: var(--largura-aside);
+    background-color: var(--fundoAzul);
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 0 20px 20px 0;
+    z-index: 100;
+    overflow-y: auto;
 }
 
-nav h1{
-    padding-top: 25px;
-    font-size: 17px;
+.topo {
+    padding: 25px 20px 15px 25px;
+}
+
+.topo h1 {
+    font-size: 20px;
     color: var(--branco);
 }
 
-nav h3{
-    font-size: 15px;
-    color: var(--branco);
-    margin-top: 25px ;
-}
-
-nav a{
-    padding: 7px 0 5px 0;
-    display: flex;
-    justify-content: left;
-    text-decoration: none;
-    color: var(--branco);
-    font-size: 12px;
-
-    transition: 0.7 ease;
-}
-nav a:hover, .ativo{
-    background-color :#D90B4F85;
-    border-radius: 11px 0 0 11px ;
-
-    /* width: 90%; */
- margin-left: auto;
-}
-
-nav img{
-    height: 19px;
-    padding-right: 5px;
-}
-.item-menu{
-    padding: 7px 80px 7px;
-}
-
-.topo{
-    /* position: relative; */
-    padding: 0 73px;
-}
-
-.conteudo{
+.conteudo {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    padding: 0 10px;
+}
+
+aside h3.item-menu {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    margin: 20px 0 10px 15px;
     padding: 0;
 }
-/*==============FIM NAV VERTICAL=========*/
 
-/*============INÍCIO FOOTER==============*/
-/* 
-    <footer class="footer">
-        <div class="footer-cima">
-            <img class="logo-footer" src="../img/Logo Quad.png" alt="">
-            <div class="footer-cima-dir">
-                <a>
-                    <h3>Quem somos</h3>
-                </a>
-                <p></p>
-                <a>Musichub</a>
-                <a>Fale Conosco</a>
-                <a>
-                    <h3>Fique por dentro</h3>
-                </a>
-                <div class="icones-footer">
-                    <a href=""><img src="../img/icones/Face.svg" alt=""></a>
-                    <a href=""><img src="../img/icones/Instagram.svg" alt=""></a>
-                    <a href=""><img src="../img/icones/Linkedin.svg" alt=""></a>
-                </div>
-            </div>
-        </div>
-        <span class="traco2"></span>
-        <div class="footer-baixo">
-            <p>©MusicHub</p>
-            <div class="esq">
-                <p>Acessibilidade</p>
-                <p>Política de Privacidade</p>
-                <p>Política de Privacidade</p>
-            </div>
-        </div>
-    </footer> 
-    */
+aside a.item-menu {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 14px;
+    border-radius: 10px;
+    transition: all 0.4s ease-out;
+}
+
+aside a.item-menu:hover, 
+aside a.item-menu.ativo {
+    background-color: rgba(217, 11, 79, 0.52);
+    padding-left: 30px;
+}
+
+aside img {
+    height: 18px;
+    width: 18px;
+}
+
+/*----------------------------------Área do Conteúdo Principal-------------------------------*/
+.body2 {
+    margin-left: var(--largura-aside);
+    padding-top: var(--altura-header);
+    min-height: 100vh;
+    width: calc(100% - var(--largura-aside));
+}
+
+.coluna {
+    width: 100%;
+}
+
+/* Botão Padrão */
+button {
+    background-color: var(--destaque);
+    color: var(--branquinho);
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #A6083C;
+    transform: translateY(-2px);
+}
+
+/* Rodapé */
 .footer {
     background-color: var(--vinho);
-    padding: 50px 100px;
+    padding: 40px 50px;
     color: #EEEEEE;
 }
 
@@ -173,13 +173,14 @@ nav img{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .footer-cima-dir {
     display: grid;
-    grid-template-rows: repeat(3, auto);
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    gap: 20px;
 }
 
 .icones-footer {
@@ -189,50 +190,62 @@ nav img{
 
 .traco2 {
     display: block;
-
-    background-color: white;
-
+    background-color: rgba(255, 255, 255, 0.2);
     width: 100%;
     height: 1px;
-
     margin: 20px 0;
 }
 
 .logo-footer {
     background-color: var(--fundoAzul);
     padding: 5px;
-    border-radius: 15px;
+    border-radius: 12px;
 }
 
 .footer-baixo {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .esq {
     display: flex;
-    gap: 50px;
-}
-/*==============FIM FOOTER===============*/
-
-/* ANIMAÇÃO BOTÕES */
-button {
-    /* Editar o tamanho no css da página */
-    /* width: 450px;
-    height: 50px;
-    margin: 30px; */
-    background-color: #D90B4F;
-    color: var(--branquinho);
-    border: none;
-    border-radius: 10px;
-    font-size: 1.2rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: transform 0.2s ease,  background-color 0.2s ease;
+    gap: 20px;
 }
 
-button:hover {
-    background-color: #A6083C;
-    transform: translateY(-3px);
+/*----------------------------------Responsividade-------------------------------*/
+@media (max-width: 992px) {
+    :root {
+        --largura-aside: 80px;
+    }
+
+    /* Esconde textos do menu em telas menores e centraliza ícones */
+    aside h1, aside h3 {
+        display: none;
+    }
+
+    aside a.item-menu {
+        justify-content: center;
+        padding: 15px 0;
+    }
+
+    aside a.item-menu img {
+        margin: 0;
+    }
+
+    .header {
+        padding: 0 20px;
+    }
 }
 
+@media (max-width: 576px) {
+    #input-buscar {
+        width: 160px;
+    }
+
+    .footer-cima {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
