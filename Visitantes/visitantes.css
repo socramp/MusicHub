@@ -160,41 +160,65 @@ header {
 }
 
 .textao {
-    background-color: var(--vinho);
+    background-color: #73143225;
     color: white;
 
+    border: 2px solid var(--destaque);
     border-radius: 10px;
-    margin: 50px 250px;
-    padding: 35px;
+    margin: 15px 250px;
+    padding: 40px;
 
-    display: grid;
-    grid-template-columns: 4px 1fr;
-    column-gap: 20px;
-    align-items: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
 }
 
-/*!- ARRRRRRRRUUUUUUMAAAAAARRRRRR*/
-/* .linha {
+.textao span {
     display: block;
     width: 4px;
-    height: 500px;
-    min-height: 80px;
+    align-self: stretch;
+    flex-shrink: 0;
+
     border-radius: 10px;
 
     background: linear-gradient(
         to bottom,
         #D90B4F 0%,
-        #343852 50%,
-        #51587D 100%
+        #1c0c58 90%
     );
+}
 
-    grid-column: 1;
-    grid-row: 4;
-} */
+.textao svg{
+    width: 3%;
+    stroke: var(--branco);
+}
+#fav-icon{
+    fill: var(--branco);
+}
 
-.textao p {
-    grid-column: 2;
-    padding-bottom: 40px;
+.textinho{
+    width: 100%;
+    /* height: fit-content; */
+    display: flex;
+
+    align-items: center;
+    justify-content: fl;
+
+    gap: 20px;
+}
+
+.textinho p {
+    flex: 1;
+    margin: 0;
+}
+
+strong{
+    color: var(--destaque);
+}
+
+#p{
+    padding-left: 5%;
 }
 
 /* ========================================================================================================================= */
@@ -333,3 +357,20 @@ header {
 /* ========================================================================================================================= */
 
 /* ========================================================================================================================= */
+
+.footer-cima-dir a{
+    text-decoration: none;
+    color: #ddb4c1;
+}
+
+.footer-cima-dir a:hover{
+   color: var(--branco); 
+}
+.esq a:hover{
+    color: var(--branco);
+}
+
+.esq a{
+    text-decoration: none;
+    color: #ddb4c1;
+}
