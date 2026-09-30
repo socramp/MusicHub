@@ -61,12 +61,19 @@
     height: 100%;
 }
 
+/*===================================================================================*/
+article{
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 29%;
+}
 .card {
-    width: fit-content;
+    width: 95%;
     background-color: var(--fundoAzul);
     border-radius: 15px;
     box-shadow: -7px 4px 7px rgba(0, 0, 0, 0.3);
-    margin: 50px;
+    /* margin: 50px; */
     padding: 20px;
 }
 
