@@ -1,0 +1,335 @@
+header {
+    background-color: var(--fundoAzul);
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 20px 100px;
+}
+
+.itens-visitantes {
+    display: flex;
+    gap: 50px;
+}
+
+.itens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* ========================================================================================================================= */
+/* CARROSSEL */
+.carrossel {
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+
+    overflow: hidden;
+}
+
+.carrossel-imagens {
+    display: flex;
+
+    height: 100%;
+
+    transition: transform 0.7s ease;
+}
+
+
+/* MUITO IMPORTANTE */
+
+.carrossel-imagens img {
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+
+    flex: 0 0 100%;
+
+    object-fit: cover;
+}
+
+
+/* BOTÕES */
+
+.carrossel-botao {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(0, 0, 0, 0.45);
+    color: white;
+
+    font-size: 1.5rem;
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    transition: 0.3s;
+}
+
+
+.carrossel-botao:hover {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+
+.anterior {
+    left: 25px;
+}
+
+
+.proximo {
+    right: 25px;
+}
+
+
+/* BOLINHAS */
+
+.carrossel-indicadores {
+    position: absolute;
+
+    bottom: 25px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 8px;
+
+    z-index: 10;
+}
+
+
+.indicador {
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.45);
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.indicador.ativo {
+    background: white;
+
+    transform: scale(1.3);
+}
+/* ========================================================================================================================= */
+
+.traco {
+    display: block;
+
+    background-color: white;
+
+    height: 1px;
+
+    margin: 50px 100px;
+}
+
+/* ========================================================================================================================= */
+/* SOBRE NÓS */
+.h2 {
+
+    font-size: 45px;
+    color: var(--destaque);
+    display: flex;
+    justify-content: center;
+}
+
+.h2 span{
+    color: var(--branco);
+}
+
+.textao {
+    background-color: var(--vinho);
+    color: white;
+
+    border-radius: 10px;
+    margin: 50px 250px;
+    padding: 35px;
+
+    display: grid;
+    grid-template-columns: 4px 1fr;
+    column-gap: 20px;
+    align-items: start;
+}
+
+/*!- ARRRRRRRRUUUUUUMAAAAAARRRRRR*/
+/* .linha {
+    display: block;
+    width: 4px;
+    height: 500px;
+    min-height: 80px;
+    border-radius: 10px;
+
+    background: linear-gradient(
+        to bottom,
+        #D90B4F 0%,
+        #343852 50%,
+        #51587D 100%
+    );
+
+    grid-column: 1;
+    grid-row: 4;
+} */
+
+.textao p {
+    grid-column: 2;
+    padding-bottom: 40px;
+}
+
+/* ========================================================================================================================= */
+
+/* ========================================================================================================================= */
+/* Planos */
+
+/* ========================================================================================================================= */
+/* PLANOS */
+
+.secao-planos {
+    padding: 0 100px;
+    text-align: center;
+}
+
+.planos-subtitulo {
+    color: #EEEEEE;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+
+.planos-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Card individual */
+.plano-card {
+    background-color: var(--vinho);
+    border-radius: 15px;
+    padding: 40px 30px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.plano-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Destaque para o plano intermediário */
+.plano-card.destaque {
+    border-color: var(--destaque);
+    transform: scale(1.05);
+}
+
+.plano-card.destaque:hover {
+    transform: scale(1.05) translateY(-8px);
+}
+
+.mais-popular {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--destaque);
+    color: white;
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.plano-titulo {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.plano-preco {
+    color: white;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.plano-preco span {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+.plano-recursos {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    text-align: left;
+    color: #EEEEEE;
+}
+
+.plano-recursos li {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* Botões */
+.plano-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-destaque {
+    background-color: var(--destaque);
+    color: white;
+}
+
+.btn-destaque:hover {
+    filter: brightness(1.15);
+}
+
+.btn-secundario {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+}
+
+.btn-secundario:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+/* ========================================================================================================================= */
+
+/* ========================================================================================================================= */
+
+/* ========================================================================================================================= */

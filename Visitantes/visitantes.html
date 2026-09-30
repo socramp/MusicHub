@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,180 @@
     <link rel="stylesheet" href="visitantes.css">
     <link rel="shortcut icon" href="../img/logoMusicHub.png" type="image/x-icon">
 </head>
+
 <body>
-    
+    <header>
+        <img src="../img/logoHorizontalExtensa.png" alt="Logo do MusicHub">
+        <div class="itens-visitantes">
+            <div class="itens">
+                <a href="#planos" class="itens">
+                    <img src="../img/icones/planos.svg" alt="Logo do Planos">
+                    <p>Planos</p>
+                </a>
+            </div>
+            <div class="itens">
+                <img src="../img/icones/user.svg" alt="Logo do Login">
+                <p>Entrar</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="carrossel">
+
+                <div class="carrossel-imagens">
+
+                    <img src="../img/carrossel1.png" alt="">
+                    <img src="../img/carrossel2.png" alt="">
+                    <img src="../img/carrossel3.png" alt="">
+                    <img src="../img/carossel4.png" alt="">
+                    <img src="../img/carrossel5.png" alt="">
+                    <img src="../img/carrossel6.png" alt="">
+                    <img src="../img/carrossel7.png" alt="">
+                    <img src="../img/carrossel8.png" alt="">
+                    <img src="../img/carrossel9.png" alt="">
+
+
+                </div>
+
+                <button class="carrossel-botao anterior">
+                    ❮
+                </button>
+
+                <button class="carrossel-botao proximo">
+                    ❯
+                </button>
+
+                <div class="carrossel-indicadores"></div>
+            </div>
+        </section>
+
+        <span class="traco"></span>
+
+        <section>
+            <h2 class="h2"><span>Quem </span> somos</h2>
+            <div class="textao">
+                <span class="linha"></span>
+                <p class="song"> 
+                    O MusicHub não surgiu apenas como mais um tocador de áudios na web; ele nasceu do desejo profundo de
+                    transformar a maneira como as pessoas se conectam com o som. Acreditamos que a música não é só um
+                    ruído de fundo para o dia a dia, mas sim o combustível de memórias, o refúgio nos dias difíceis e a
+                    linguagem universal que une diferentes culturas e momentos.
+                </p>
+
+                <p class="radio">
+                    Nossa história começou quando percebemos o quanto a descoberta musical estava se tornando mecânica.
+                    Queríamos resgatar aquela magia clássica — a sensação nostálgica de garimpar um disco de vinil numa
+                    loja antiga, ler o encarte de um álbum e se surpreender com uma nova sonoridade —, mas trazendo toda
+                    essa experiência para a era digital. Foi assim que idealizamos um espaço interativo, onde a
+                    navegação entre gêneros, artistas e ritmos fosse tão viva quanto a própria música.
+                </p>
+
+                <p class="social">
+                    Seja você um ouvinte casual em busca do plano perfeito para acompanhar os estudos, um apaixonado por
+                    pagode, rock ou MPB, ou alguém que adora criar playlists temáticas para cada instante da vida, o
+                    MusicHub foi feito sob medida para o seu ritmo. Aqui, reunimos um acervo dinâmico, biografia
+                    detalhada dos seus artistas preferidos, algoritmos de descoberta e planos flexíveis para garantir
+                    que a sua única preocupação seja apertar o play.
+                </p>
+
+                <p class="fav">
+                    Afinal, no MusicHub acreditamos que cada pessoa carrega uma trilha sonora totalmente única no peito.
+                    O nosso papel é criar a ponte entre a sua rotina e as melodias que realmente dão vida a ela.
+                </p>
+
+                <p>
+                    MusicHub: Onde a música finalmente encontra você.
+                </p>
+            </div>
+        </section>
+
+        <span class="traco"></span>
+
+        <!-- SEÇÃO DE PLANOS -->
+        <section class="secao-planos" id="planos">
+            <h2 class="h2">Escolha o Seu Plano Musical</h2>
+            <p class="planos-subtitulo">
+                Ouça sem limites, baixe as tuas faixas favoritas e curte som em alta qualidade.
+            </p>
+
+            <div class="planos-container">
+
+                <div class="plano-card">
+                    <h3 class="plano-titulo">Free</h3>
+                    <div class="plano-preco">R$ 0 <span>/mês</span></div>
+                    <ul class="plano-recursos">
+                        <li>✓ Músicas em modo aleatório</li>
+                        <li>✓ Qualidade de áudio padrão</li>
+                        <li>✕ Anúncios entre as faixas</li>
+                        <li>✕ Sem modo offline (download)</li>
+                    </ul>
+                    <button class="plano-btn btn-secundario">Plano Atual</button>
+                </div>
+                <!-- ================================================================================= -->
+                <div class="plano-card destaque">
+                    <div class="mais-popular">Mais Popular</div>
+                    <h3 class="plano-titulo">Individual</h3>
+                    <div class="plano-preco">R$ 21,90 <span>/mês</span></div>
+                    <ul class="plano-recursos">
+                        <li>✓ Músicas <strong>SEM ANÚNCIOS</strong></li>
+                        <li>✓ Modo Offline (baixe para ouvir)</li>
+                        <li>✓ Troque de música quantas vezes quiser</li>
+                        <li>✓ Áudio em Alta Qualidade (HQ)</li>
+                    </ul>
+                    <button class="plano-btn btn-destaque">Experimentar Premium</button>
+                </div>
+                <!-- ================================================================================= -->
+                <div class="plano-card">
+                    <h3 class="plano-titulo">Família</h3>
+                    <div class="plano-preco">R$ 34,90 <span>/mês</span></div>
+                    <ul class="plano-recursos">
+                        <li>✓ Até 6 contas Premium individuais</li>
+                        <li>✓ Bloqueio de conteúdo explícito</li>
+                        <li>✓ Mix da Família (playlist compartilhada)</li>
+                        <li>✓ Tudo do plano Individual</li>
+                    </ul>
+                    <button class="plano-btn btn-secundario">Assinar Família</button>
+                </div>
+
+            </div>
+        </section>
+
+        <span class="traco"></span>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-cima">
+            <img class="logo-footer" src="../img/Logo Quad.png" alt="">
+            <div class="footer-cima-dir">
+                <a>
+                    <h3>Quem somos</h3>
+                </a>
+                <p></p>
+                <a>Musichub</a>
+                <a>Fale Conosco</a>
+                <a>
+                    <h3>Fique por dentro</h3>
+                </a>
+                <div class="icones-footer">
+                    <a href=""><img src="../img/icones/Face.svg" alt=""></a>
+                    <a href=""><img src="../img/icones/Instagram.svg" alt=""></a>
+                    <a href=""><img src="../img/icones/Linkedin.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <span class="traco2"></span>
+        <div class="footer-baixo">
+            <p>©MusicHub</p>
+            <div class="esq">
+                <p>Acessibilidade</p>
+                <p>Política de Privacidade</p>
+                <p>Política de Privacidade</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="visitantes.js"></script>
 </body>
+
 </html>

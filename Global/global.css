@@ -17,8 +17,221 @@ body {
     --destaque: #D90B4F;
     --branquinho: #F7FBFC;
     --branco: #FFFFFF;
+    --cinza: #55596d;
 }
 
+/*----------------------------------Cabeçalho-------------------------------*/
+.header {
+    background-color: var(--fundoAzul);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px 100px 20px;
+    gap: 50px;
+    width: 100%;
+    position: fixed;
 
+        box-shadow: 7px 7px #00000045;
 
+}
+
+#input-buscar{
+    border: none;
+    width: 240px;
+    height: 45px;
+    border-radius: 30px;
+    padding: 10.5px 145px 10.5px 30px;
+    background-color: #4e5060;
+    color: var(--branco);
+    font-size: 15px;
+    transition: 0.3s ease;
+    
+    background-image: url("../img/icones/lupa.svg");
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 200px center;
+
+}
+
+#input-buscar::placeholder{
+    color: #FFFFFF95;
+    font-size: 15px;
+}
+
+#input-buscar:focus {
+    outline: none;
+    /* border-color: var(--vinho); */
+    box-shadow: 0 0 10px #D90B4F85;
+}
+
+#menu-img{
+    width: 33px;
+}
+
+/*=========================INICIO NAV VERTICAL========================== */
+nav{
+    box-shadow: 7px 7px #00000045;
+    border-radius: 0 30px 30px 0;
+    position: fixed;
+    background-color: var(--fundoAzul);
+    height: 100vh;
+    
+}
+
+nav h1{
+    padding-top: 25px;
+    font-size: 17px;
+    color: var(--branco);
+}
+
+nav h3{
+    font-size: 15px;
+    color: var(--branco);
+    margin-top: 25px ;
+}
+
+nav a{
+    padding: 7px 0 5px 0;
+    display: flex;
+    justify-content: left;
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 12px;
+
+    transition: 0.7 ease;
+}
+nav a:hover, .ativo{
+    background-color :#D90B4F85;
+    border-radius: 11px 0 0 11px ;
+
+    /* width: 90%; */
+ margin-left: auto;
+}
+
+nav img{
+    height: 19px;
+    padding-right: 5px;
+}
+.item-menu{
+    padding: 7px 80px 7px;
+}
+
+.topo{
+    /* position: relative; */
+    padding: 0 73px;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+/*==============FIM NAV VERTICAL=========*/
+
+/*============INÍCIO FOOTER==============*/
+/* 
+    <footer class="footer">
+        <div class="footer-cima">
+            <img class="logo-footer" src="../img/Logo Quad.png" alt="">
+            <div class="footer-cima-dir">
+                <a>
+                    <h3>Quem somos</h3>
+                </a>
+                <p></p>
+                <a>Musichub</a>
+                <a>Fale Conosco</a>
+                <a>
+                    <h3>Fique por dentro</h3>
+                </a>
+                <div class="icones-footer">
+                    <a href=""><img src="../img/icones/Face.svg" alt=""></a>
+                    <a href=""><img src="../img/icones/Instagram.svg" alt=""></a>
+                    <a href=""><img src="../img/icones/Linkedin.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <span class="traco2"></span>
+        <div class="footer-baixo">
+            <p>©MusicHub</p>
+            <div class="esq">
+                <p>Acessibilidade</p>
+                <p>Política de Privacidade</p>
+                <p>Política de Privacidade</p>
+            </div>
+        </div>
+    </footer> 
+    */
+.footer {
+    background-color: var(--vinho);
+    padding: 50px 100px;
+    color: #EEEEEE;
+}
+
+.footer-cima {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-cima-dir {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.icones-footer {
+    display: flex;
+    gap: 15px;
+}
+
+.traco2 {
+    display: block;
+
+    background-color: white;
+
+    width: 100%;
+    height: 1px;
+
+    margin: 20px 0;
+}
+
+.logo-footer {
+    background-color: var(--fundoAzul);
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.footer-baixo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.esq {
+    display: flex;
+    gap: 50px;
+}
+/*==============FIM FOOTER===============*/
+
+/* ANIMAÇÃO BOTÕES */
+button {
+    /* Editar o tamanho no css da página */
+    /* width: 450px;
+    height: 50px;
+    margin: 30px; */
+    background-color: #D90B4F;
+    color: var(--branquinho);
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease,  background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #A6083C;
+    transform: translateY(-3px);
+}
 
