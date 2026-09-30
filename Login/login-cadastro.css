@@ -14,10 +14,14 @@ body {
     justify-content: space-around;
 }
 
+.formulario-cadastroArtista {
+    display: flex;
+    flex-direction: column;
+}
+
 .tela-login {
     border: 3px solid var(--vinho);
     margin: 3rem;
-   
 }
 
 .cabecalho {
@@ -145,4 +149,12 @@ input[type="checkbox"] {
     border-radius: 50%;
     cursor: pointer;
     accent-color: var(--destaque);
+}
+
+.perfil-artistico {
+    display: flex;
+}
+
+.informacoes-pessoais {
+    display: flex;
 }
