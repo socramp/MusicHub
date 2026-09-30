@@ -214,6 +214,24 @@ button:hover {
     gap: 20px;
 }
 
+.esq a{
+    text-decoration: none;
+    color: #ddb4c1;
+}
+
+.esq a:hover{
+    color: var(--branco);
+}
+
+.footer-cima-dir a{
+    text-decoration: none;
+    color: #ddb4c1;
+}
+
+.footer-cima-dir a:hover{
+   color: var(--branco); 
+}
+
 /*----------------------------------Responsividade-------------------------------*/
 @media (max-width: 992px) {
     :root {
