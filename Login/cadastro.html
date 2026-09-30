@@ -13,48 +13,56 @@
 <body>
     <div class="tela-login">
         <div class="cabecalho">
-            <img src="/img/LogoQuadFundo.png" alt="Logo do MusicHub">
+            <!-- <div class="imagem-cabecalho"> -->
+                <a href="/Home/index.html">
+            <img src="/img/LogoQuadFundo.png" alt="Logo do MusicHub"></a>
+        <!-- </div> -->
+        <div class="texto-cabecalho-cadastro">
             <div class="texto-cabecalho">
                 <h1>Cadastrar</h1>
-                <p>Cadastre-se para acessaar o MusicHub</p>
+                <p>Cadastre-se para acessar o MusicHub</p>
             </div>
         </div>
-
+        </div>
 
         <form action="#" class="formulario-cadastro">
             <section class="input-esquerda">
                 <div class="campo">
                     <label for="name">Nome Completo</label>
-                    <input type="nome" placeholder="Nome Completo">
+                    <input type="text" placeholder="Nome Completo" class="input-form">
                 </div>
                 <div class="campo">
                     <label for="data">Data de Nascimento</label>
-                    <input type="date" placeholder="Data de Nascimento">
+                    <input type="text" placeholder="Data de Nascimento" class="input-form">
                 </div>
                 <div class="campo">
                     <label for="senha">Senha</label>
-                    <input type="password" placeholder="Senha">
+                    <input type="password" placeholder="Senha" class="input-form">
                 </div>
             </section>
             <section class="input-direita">
             <div class="campo">
                 <label for="username">Nome de usuário</label>
-                <input type="text" placeholder="Nome de Usuário">
+                <input type="text" placeholder="Nome de Usuário" class="input-form">
             </div>
             <div class="campo">
                 <label for="email">E-mail</label>
-                <input type="text" placeholder="E-mail">
+                <input type="text" placeholder="E-mail" class="input-form">
             </div>
             <div class="campo">
                 <label for="senha">Confirmar senha</label>
-                <input type="password" placeholder="Confirmar Senha">
+                <input type="password" placeholder="Confirmar Senha" class="input-form">
             </div>
         </section>
         </form>
-        <div class="input-termos">
+        <div class="botoes">
+            <label class="link-termos">
                 <input type="checkbox">
-                <p>Eu concordo com os <a href="/Termos/termo.html">termos e condições</a></p>
-            </div>
+                Eu concordo com os <a href="/Termos/termo.html">termos e condições</a>
+            </label>
+                <!-- <p class="link-termos">Eu concordo com os <a href="/Termos/termo.html">termos e condições</a></p>   -->
+            <button class="botao-cadastrar">CADASTRAR</button>  
+        </div>
     </div>
 </body>
 
