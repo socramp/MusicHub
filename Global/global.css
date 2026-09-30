@@ -217,13 +217,13 @@ button:hover {
 /*----------------------------------Responsividade-------------------------------*/
 @media (max-width: 992px) {
     :root {
-        --largura-aside: 80px;
+        --largura-aside: 160px;
     }
 
     /* Esconde textos do menu em telas menores e centraliza ícones */
-    aside h1, aside h3 {
+    /* aside h1, aside h3 {
         display: none;
-    }
+    } */
 
     aside a.item-menu {
         justify-content: center;
@@ -236,6 +236,13 @@ button:hover {
 
     .header {
         padding: 0 20px;
+    }
+}
+
+@media (max-width: 820px) {
+    .footer-cima, .footer-baixo {
+        justify-content: center;
+        align-items: center;
     }
 }
 
