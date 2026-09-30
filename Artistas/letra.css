@@ -116,12 +116,13 @@ main {
 }
 
 /* ======== BOTÃO VOLTAR =============== */
+
 .voltar {
     margin-bottom: 10px;
     margin-top: 20px;
 }
 
-.voltar button {
+.botao-voltar {
     width: 90px;
     height: 35px;
 
@@ -133,11 +134,10 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-
     cursor: pointer;
 }
 
-.voltar button img {
+.voltar img {
     width: 18px;
     height: 18px;
 }
@@ -148,28 +148,73 @@ main {
 }
 
 .capa-artista {
+    margin-top: auto;
     width: 90%;
     height: 90%;
     overflow: hidden;
-
 }
 
 .capa-artista img {
-     width: 100%;
+    width: 100%;
     background-size: cover;
 }
 
 /* ========== NOME MUSICA - NOME ARTISTA ========== */
 
 .nomeMusica {
-width: 100%;
-    margin-top: 35px;
-    padding-top: 15px;
-    padding-bottom: 50px;
+    width: 100%;
+    padding-top: 25px;
     align-items: center;
 }
 
-.nomeMusica .h1 {
-    margin: 0 0 18px;
-    font-size: 18px;
+.nomeMusica h1{
+    display: flex;
+    justify-content: center;
+    /* padding-left: 500px; */
+    /* align-items: center; */
 }
+
+.nomeMusica h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.estrofes {
+    margin-top: 60px;
+    display: grid;
+    justify-content: center;
+}
+.estrofe1 {
+    margin: 0px;
+}
+
+.estrofe2 {
+    margin: 10px;
+}
+
+.estrofe3 {
+    margin: 10px;
+}
+
+.estrofe4 {
+    margin: 10px;
+}
+.estrofe5 {
+    margin: 10px;
+}
+
+.estrofe6 {
+    margin: 10px;
+}
+
+.estrofe7 {
+    margin: 10px;
+}
+
+.estrofe8 {
+    margin: 10px;
+    margin-bottom: 60px;
+}
+
+/* ========== FOOTER ========== */
+

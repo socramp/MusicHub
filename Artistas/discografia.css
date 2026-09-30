@@ -1,0 +1,238 @@
+header {
+    position: relative;
+}
+
+.header {
+    background-color: var(--fundoAzul);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px 100px 20px;
+    gap: 50px;
+    width: 100%;
+    position: absolute;
+}
+
+#input-buscar {
+    border: none;
+    width: 240px;
+    height: 45px;
+    border-radius: 30px;
+    padding: 10.5px 145px 10.5px 30px;
+    background-color: #4e5060;
+    color: var(--branco);
+    font-size: 15px;
+    transition: 0.3s ease;
+
+    background-image: url("../img/icones/lupa.svg");
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 200px center;
+
+}
+
+#input-buscar::placeholder {
+    color: #FFFFFF95;
+    font-size: 15px;
+}
+
+#input-buscar:focus {
+    outline: none;
+    /* border-color: var(--vinho); */
+    box-shadow: 0 0 10px #D90B4F85;
+}
+
+#menu-img {
+    width: 33px;
+}
+
+/*========== */
+nav {
+    box-shadow: 7px 7px #00000045;
+    border-radius: 0 30px 30px 0;
+    position: fixed;
+    background-color: var(--fundoAzul);
+    height: 100vh;
+
+}
+
+nav h1 {
+    padding-top: 25px;
+    font-size: 17px;
+    color: var(--branco);
+}
+
+nav h3 {
+    font-size: 15px;
+    color: var(--branco);
+    margin-top: 30px;
+}
+
+nav a {
+    padding: 7px 0 5px 0;
+    display: flex;
+    justify-content: left;
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 12px;
+}
+
+nav img {
+    height: 19px;
+    padding-right: 5px;
+}
+
+.topo {
+    /* position: relative; */
+    padding: 0 73px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/*==============FIM NAV VERTICAL=========*/
+
+/**/
+.link {
+    justify-content: center;
+    color: red;
+    align-items: center;
+}
+
+/* ===== PRINCIPA (DO ARTISTA - LETRA) ===== */
+main {
+    margin-left: 270px;
+    padding-top: 85px;
+
+    padding-left: 45px;
+    padding-right: 45px;
+
+    width: calc(100% - 270px);
+    color: var(--branco);
+}
+
+/* ======== BOTÃO VOLTAR =============== */
+
+.voltar {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.botao-voltar {
+    width: 90px;
+    height: 35px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: var(--destaque);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.voltar img {
+    width: 18px;
+    height: 18px;
+}
+
+/* ========== CAPA ARTISTAS ========= */
+.artistas {
+    width: 100%;
+}
+
+.capa-artista {
+    margin-top: auto;
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+}
+
+.capa-artista img {
+    width: 100%;
+    background-size: cover;
+}
+ /* ========== INICIO DISCOGRAFIA ========== */
+.discografiaArtista {
+    width: 100%;
+    padding-top: 25px;
+    align-items: center;
+}
+
+.discografiaArtista h1{
+    display: flex;
+    justify-content: center;
+    /* padding-left: 500px; */
+    /* align-items: center; */
+}
+
+.discografiaArtista h2 {
+    display: flex;
+    justify-content: center;
+}
+
+/* ========== DIVISÓRIA ========== */
+
+.albuns h2 {
+ margin-top: 60px;   
+ border-bottom: 1px solid var(--cinza);
+}
+
+/* === carrossel ==== */
+
+.lista-albuns {
+    width: 72%;
+    height: 350px;
+    padding-left: 90px;
+
+}
+
+.albunsDisografia {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* BARRA DO CARROSSEL */
+
+.albunsDiscografia::-webkit-scrollbar {
+    width: 5px;
+}
+
+.albunsDiscografia::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.albunsDiscografia::-webkit-scrollbar-thumb {
+    background-color: var(--destaque);
+
+    border-radius: 10px;
+}
+
+/* =================== MÚSICAS ===================== */
+.album {
+    width: 100%;
+    min-height: 65px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+    padding: 8px 5px;
+}
+
+
+/* CAPA DA MÚSICA */
+.musica>img {
+    display: flex;
+    width: 50px;
+    height: 50px;
+
+}
+
