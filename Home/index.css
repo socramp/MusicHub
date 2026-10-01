@@ -195,11 +195,10 @@ article{
 .nav-modal {
     display: grid;
     grid-template-rows: repeat(5, auto);
-    gap: 15px;
+    gap: 27px;
     align-items: center;
     width: 100%;
     max-width: 150px;
-    
 }
 
 .nav-modal a {
