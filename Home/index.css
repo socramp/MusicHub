@@ -211,3 +211,108 @@ article{
     text-decoration: none;
     color: var(--branco);
 }
+/*----------------------------------------------------------------------------------*/
+.genero {
+    padding: 7px 45px;
+    width: fit-content;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.genero a{
+    font-weight: 700;
+    justify-self: center;
+    text-decoration: none;
+}
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-==-=-=-=-=-=-==-=-=-=-=-=-=-=-=-*/
+.rock, .rock a{
+    background-color: #C6284F;
+    color: #5D1124;
+}
+
+.pop, .pop a{
+    background-color: #E85D9E;
+    color: #5D213D;
+}
+
+.mpb, .mpb a{
+    background-color: #3A9B78;
+    color: #1C4E53;
+}
+
+.rap, .rap a{
+    background-color: #7654C8;
+    color: #402169;
+}
+
+.jazz, .jazz a{
+    background-color: #C9A227;
+    color: 463911;
+}
+
+.funk, .funk a{
+    background-color: #C83D79;
+    color: #5D1D39;
+}
+
+.indie, .indie a{
+    background-color: #719B7A;
+    color: #29372C;
+}
+
+.blues, .blues a{
+    background-color: #3978B8;
+    color: #12273C;
+}
+
+.sertanejo, .sertanejo a{
+    background-color: #B86B4B;
+    color: #4D2C1F;
+}
+
+.metal, .metal a{
+    background-color: #667085;
+    color: #242830;
+}
+
+.reb, .reb a{
+    background-color: #9B4D73;
+    color: #4B2135;
+}
+
+.punk, .punk a{
+    background-color: #D66A32;
+    color: #683419;
+}
+
+.eletronica, .eletronica a{
+    background-color: #35B9C8;
+    color: #1C4E53;
+}
+
+.reggae, .reggae a{
+    background-color: #78944A;
+    color: #1C4E53;
+}
+
+.kpop, .kpop a{
+    background-color: #B66ED1;
+    color: #5A3667;
+}
+
+.classico, .classico a{
+    background-color: #C8B98A;
+    color: #524D3B;
+}
+
+.lofi .lofi a{
+    background-color: #8E82B5;
+    color: #443E56;
+}
+
+.gospel, .gospel a{
+    background-color: #5C9BC4;
+    color: #2D4859;
+}
