@@ -1,23 +1,128 @@
-const albuns = document.querySelector(".albunsGerais");
-const botaoAnterior = document.getElementById("anterior");
-const botaoProxima = document.getElementById("proxima");
+const imagens = document.querySelector(".album");
+const slides = document.querySelectorAll(".album img");
 
-let posicao = 0;
+const botaoAnterior = document.querySelector(".anterior");
+const botaoProximo = document.querySelector(".proximo");
 
-const larguraAlbum = 250;
+const indicadoresContainer = document.querySelector(".carrosselIdicadores");
 
-botaoProxima.addEventListener("click", () => {
-    posicao -= larguraAlbum;
+let slideAtual = 0;
+let intervalo;
 
-    albuns.style.transform = `translateX(${posicao}px)`;
-});
 
-botaoAnterior.addEventListener("click", () => {
-    posicao += larguraAlbum;
+/* CRIA AS BOLINHAS */
 
-    if (posicao > 0) {
-        posicao = 0;
+slides.forEach((slide, index) => {
+
+    const indicador = document.createElement("div");
+
+    indicador.classList.add("indicador");
+
+    if (index === 0) {
+        indicador.classList.add("ativo");
     }
 
-    albuns.style.transform = `translateX(${posicao}px)`;
+    indicador.addEventListener("click", () => {
+
+        slideAtual = index;
+
+        atualizarCarrossel();
+
+        reiniciarIntervalo();
+    });
+
+    indicadoresContainer.appendChild(indicador);
 });
+
+
+const indicadores = document.querySelectorAll(".indicador");
+
+
+/* MOVE O CARROSSEL */
+
+function atualizarCarrossel() {
+
+    const larguraCarrossel =
+        document.querySelector(".carrossel").clientWidth;
+
+    imagens.style.transform =
+        `translateX(-${slideAtual * larguraCarrossel}px)`;
+
+    indicadores.forEach(indicador => {
+        indicador.classList.remove("ativo");
+    });
+
+    indicadores[slideAtual].classList.add("ativo");
+}
+
+
+/* PRÓXIMA IMAGEM */
+
+function proximoSlide() {
+
+    slideAtual++;
+
+    if (slideAtual >= slides.length) {
+        slideAtual = 0;
+    }
+
+    atualizarCarrossel();
+}
+
+
+/* IMAGEM ANTERIOR */
+
+function slideAnterior() {
+
+    slideAtual--;
+
+    if (slideAtual < 0) {
+        slideAtual = slides.length - 1;
+    }
+
+    atualizarCarrossel();
+}
+
+
+/* BOTÕES */
+
+botaoProximo.addEventListener("click", () => {
+
+    proximoSlide();
+
+    reiniciarIntervalo();
+});
+
+
+botaoAnterior.addEventListener("click", () => {
+
+    slideAnterior();
+
+    reiniciarIntervalo();
+});
+
+
+/* PASSA AUTOMATICAMENTE */
+
+function iniciarIntervalo() {
+
+    intervalo = setInterval(() => {
+
+        proximoSlide();
+
+    }, 5000);
+
+}
+
+
+/* REINICIA O TEMPO AO CLICAR */
+
+function reiniciarIntervalo() {
+
+    clearInterval(intervalo);
+
+    iniciarIntervalo();
+}
+
+
+iniciarIntervalo();
