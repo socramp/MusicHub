@@ -136,3 +136,78 @@ article{
     object-fit: cover;
     margin-bottom: 8px;
 }
+
+/* ============================================================================================== */
+/* MODAL */
+
+.modal {
+  position: fixed;
+  z-index: 1000;
+  
+  width: 100vw;
+  height: 100vh;
+  
+  display: none;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.modal:target {
+  display: flex;
+}
+
+.modal-fundo {
+  position: absolute;
+  z-index: 1;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: default;
+}
+
+.modal-coisas {
+  position: relative;
+  z-index: 2;
+
+  background-color: var(--fundoAzul);
+  color: #333;
+  
+  border-radius: 30px 0 0 30px;
+  min-width: 250px;
+  
+  padding: 24px;
+  margin-top: 80px;
+  margin-right: 20px;
+}
+
+.btn-fechar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  
+  text-decoration: none;
+  font-size: 20px;
+  color: #333;
+}
+
+.nav-modal {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    gap: 27px;
+    align-items: center;
+    width: 100%;
+    max-width: 150px;
+}
+
+.nav-modal a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    gap: 5px;
+
+    text-decoration: none;
+    color: var(--branco);
+}
