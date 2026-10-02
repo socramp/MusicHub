@@ -84,6 +84,7 @@ article {
     border-radius: 15px;
     box-shadow: -7px 4px 7px rgba(0, 0, 0, 0.3);
     padding: 20px;
+    position: relative;
 }
 
 .texto-card {
@@ -151,6 +152,12 @@ article {
 
 
 /*----------------------------------------------------------------------------------*/
+.generos{
+    overflow-x: scroll;
+}
+.generos::-webkit-scrollbar {
+    display: none;
+}
 .genero {
     padding: 7px 45px;
     width: fit-content;
@@ -158,6 +165,11 @@ article {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.genero:hover {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
+    box-shadow: 7px 7px 7px 7px var(--cor);
 }
 
 .genero a {
@@ -171,105 +183,161 @@ article {
 .rock a {
     background-color: #C6284F;
     color: #5D1124;
+    --cor: #5D112475;
 }
 
 .pop,
 .pop a {
     background-color: #E85D9E;
     color: #5D213D;
+    --cor: #5D213D75;
 }
 
 .mpb,
 .mpb a {
     background-color: #3A9B78;
     color: #1C4E53;
+    --cor: #1C4E5375;
 }
 
 .rap,
 .rap a {
     background-color: #7654C8;
     color: #402169;
+    --cor: #40216975;
 }
 
 .jazz,
 .jazz a {
     background-color: #C9A227;
-    color: 463911;
+    color: #463911;
+    --cor: #46391175;
 }
 
 .funk,
 .funk a {
     background-color: #C83D79;
     color: #5D1D39;
+    --cor:#5D1D3975;
 }
 
 .indie,
 .indie a {
     background-color: #719B7A;
     color: #29372C;
+    --cor: #29372C75;
 }
 
 .blues,
 .blues a {
     background-color: #3978B8;
     color: #12273C;
+    --cor: #12273C75;
 }
 
 .sertanejo,
 .sertanejo a {
     background-color: #B86B4B;
     color: #4D2C1F;
+    --cor: #4D2C1F75;
 }
 
 .metal,
 .metal a {
     background-color: #667085;
     color: #242830;
+    --cor: #24283075;
 }
 
 .reb,
 .reb a {
     background-color: #9B4D73;
     color: #4B2135;
+    --cor: #4B213575;
 }
 
 .punk,
 .punk a {
     background-color: #D66A32;
     color: #683419;
+    --cor: #68341975;
 }
 
 .eletronica,
 .eletronica a {
     background-color: #35B9C8;
     color: #1C4E53;
+    --cor: #1C4E5375;
 }
 
 .reggae,
 .reggae a {
     background-color: #78944A;
     color: #1C4E53;
+    --cor: #1C4E5375;
 }
 
 .kpop,
 .kpop a {
     background-color: #B66ED1;
     color: #5A3667;
+    --cor: #5A366775;
 }
 
 .classico,
 .classico a {
     background-color: #C8B98A;
     color: #524D3B;
+    --cor: #524D3B75;
 }
 
-.lofi .lofi a {
+.lofi, .lofi a{
     background-color: #8E82B5;
     color: #443E56;
+    --cor: #443E5675;
 }
 
 .gospel,
 .gospel a {
     background-color: #5C9BC4;
     color: #2D4859;
+    --cor: #2D485975;
+}
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-==-=-=-=-=-=-==-=-=-=-=-=-=-=-=-*/
+.card-seta {
+    position: absolute;
+    top: 50%;
+
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(0, 0, 0, 0.45);
+    color: white;
+
+    font-size: 0.75rem;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.card-seta:hover {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+
+.anterior {
+}
+
+
+.proximo {
+    /* left: 2%; */
+    left: 97%;
 }
