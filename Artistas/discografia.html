@@ -1,244 +1,408 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artista - Letra</title>
+
+    <title>Artista - Discografia</title>
+
     <link rel="stylesheet" href="../Global/global.css">
     <link rel="stylesheet" href="../Artistas/discografia.css">
     <link rel="shortcut icon" href="../img/logoMusicHub.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
-    <header>
-        <!-- CABEÇALHO -->
-        <div class="header">
-            <input type="text" placeholder="Buscar" id="input-buscar">
+    <!-- CABEÇALHO -->
+    <header class="header">
 
-            <a href="" id="menu">
-                <img id="menu-img" src="../img/icones/menu.svg" alt="">
+        <input type="text"
+            placeholder="Buscar"
+            id="input-buscar">
+
+        <a href="" id="menu">
+            <img id="menu-img"
+                src="../img/icones/menu.svg"
+                alt="Menu">
+        </a>
+
+    </header>
+
+
+    <!-- MENU LATERAL -->
+    <aside>
+
+        <div class="topo">
+            <h1>MusicHub</h1>
+        </div>
+
+        <div class="conteudo">
+
+            <h3 class="item-menu">Menu</h3>
+
+            <a href="../Home/index.html" class="item-menu ">
+                <img src="../img/icones/exploreIcon.svg" alt="">
+                <span>Explore</span>
+            </a>
+
+            <a href="../Generos/genero.html" class="item-menu">
+                <img src="../img/icones/generoIcon.svg" alt="">
+                <span>Gênero</span>
+            </a>
+
+            <a href="../Álbuns/albuns.html" class="item-menu">
+                <img src="../img/icones/albunsIcon.svg" alt="">
+                <span>Álbuns</span>
+            </a>
+
+            <a href="../Artistas/artistas.html" class="item-menu ativo">
+                <img src="../img/icones/artistasIcon.svg" alt="">
+                <span>Artistas</span>
+            </a>
+
+            <a href="../Social/social.html" class="item-menu">
+                <img src="../img/icones/socialIcon.svg" alt="">
+                <span>Social</span>
+            </a>
+
+
+            <h3 class="item-menu">Biblioteca</h3>
+
+            <a href="" class="item-menu">
+                <img src="../img/icones/recentesIcon.svg" alt="">
+                <span>Recentes</span>
+            </a>
+
+            <a href="../Playrists/playrist.html" class="item-menu">
+                <img src="../img/icones/baixadosIcon.svg" alt="">
+                <span>Baixados</span>
+            </a>
+
+            <a href="../Playrists/playrist.html" class="item-menu">
+                <img src="../img/icones/favoritosIcon.svg" alt="">
+                <span>Favoritos</span>
+            </a>
+
+
+            <h3 class="item-menu">Playlists</h3>
+
+            <a href="" class="item-menu">
+                <img src="../img/icones/favoritosIcon.svg" alt="">
+                <span>Favoritos</span>
+            </a>
+
+            <a href="" class="item-menu">
+                <img src="../img/icones/iconePlayrist.png" alt="">
+                <span>Playlist 1</span>
+            </a>
+
+            <a href="" class="item-menu">
+                <img src="../img/icones/iconePlayrist.png" alt="">
+                <span>Playlist 2</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <!-- BOTÃO VOLTAR -->
+        <div class="voltar">
+
+            <a href="../Artistas/artistas.html"
+                class="botao-voltar">
+
+                <img src="../img/icones/sair.svg"
+                    alt="Sair">
+
             </a>
         </div>
 
-        <!-- LATERAL -->
-        <nav>
-            <div class="topo">
-                <h1>MusicHub</h1>
-            </div>
+        <!-- ARTISTA -->
+        <section class="artistas">
+            <div class="capa-artista">
 
-            <div class="conteudo">
-                <h3 class="item-menu">Menu</h3>
-                <a href="../Home/index.html" class="item-menu">
-                    <img src="../img/icones/exploreIcon.svg" alt="">
-                    Explore
-                </a>
-                <a href="../Generos/genero.html" class="item-menu">
-                    <img src="../img/icones/generoIcon.svg" alt="">
-                    Gênero
-                </a>
-                <a href="../Álbuns/albuns.html" class="item-menu">
-                    <img src="../img/icones/albunsIcon.svg" alt="">
-                    Álbuns
-                </a>
-                <a href="../Artistas/artistas.html" class="item-menu ativo">
-                    <img src="../img/icones/artistasIcon.svg" alt="">
-                    Artistas
-                </a>
-                <a href="../Social/social.html" class="item-menu">
-                    <img src="../img/icones/socialIcon.svg" alt="">
-                    Social
-                </a>
-
-                <h3 class="item-menu">Biblioteca</h3>
-                <a href="" class="item-menu">
-                    <img src="../img/icones/recentesIcon.svg" alt="">
-                    Recentes
-                </a>
-                <a href="../Playrists/playrist.html" class="item-menu">
-                    <img src="../img/icones/baixadosIcon.svg" alt="">
-                    Baixados
-                </a>
-                <a href="../Playrists/playrist.html" class="item-menu">
-                    <img src="../img/icones/favoritosIcon.svg" alt="">
-                    Favoritos
-                </a>
-
-                <h3 class="item-menu">Playlists</h3>
-                <a href="" class="item-menu">
-                    <img src="../img/icones/favoritosIcon.svg" alt="">
-                    Favoritos
-                </a>
-                <a href="" class="item-menu">
-                    <img src="../img/icones/iconePlayrist.png" alt="">
-                    Playlist 1
-                </a>
-                <a href="" class="item-menu">
-                    <img src="../img/icones/iconePlayrist.png" alt="">
-                    Playlist 2
-                </a>
-            </div>
-        </nav>
-
-        <main>
-
-
-            <div class="voltar">
-                <a href="../Artistas/artistas.html" class="botao-voltar">
-                    <img src="../img/icones/sair.svg" alt="Sair">
-                </a>
+                <img src="../img/ariana grande (1).jpg"
+                    alt="Artista: Ariana Grande">
             </div>
 
 
-            <section class="artistas">
-                <div class="capa-artista">
-                    <img src="../img/ariana grande (1).jpg" alt="Artista: Ariana Grande">
-                </div>
-
-                <div class="discografiaArtista">
-                    <h1>Ariana Grande</h1>
-                    <h2>Discografia</h2>
-
-                </div>
-
-                <div class="albuns">
-                    <h2>Álbuns</h2>
-                </div>
-
-                <section>
-
-                    <div class="carrossel">
-                        <div class="albunsDiscografia">
-
-                            <!-- MÚSICAS -->
-                            <div class="albunsGerais">
-                                <div class="album">
-                                    <img src="../img/Yours Truly - Ariana Grande.jpg">
-                                    <h4>Yours Truly</h4>
-                                    <ul>
-                                        <li>2013</li>
-                                    </ul>
-                                </div>
-
-                                <div class="album">
-                                    <img src="../img/25684660369884281.jpg">
-                                    <h4>My Everything</h4>
-                                    <ul>
-                                        <li>2014</li>
-                                    </ul>
-                                </div>
-
-                                <div class="album">
-                                    <img src="../img/ariana grande dangerous woman.jpg">
-                                    <h4>Dangerous Woman</h4>
-                                    <ul>
-                                        <li>2016</li>
-                                    </ul>
-                                </div>
-
-                                <div class="album">
-                                    <img src="../img/Album Cover _ Ariana Grande - Sweetener.jpg">
-                                    <h4>Sweetener</h4>
-                                    <ul>
-                                        <li>2018</li>
-                                    </ul>
-                                </div>
-                                <div class="album">
-                                    <img src="../img/Thank'u Next.jpg">
-                                    <h4>Thank U, Next</h4>
-                                    <ul>
-                                        <li>2019</li>
-                                    </ul>
-                                </div>
-                                <div class="album">
-                                    <img src="../img/Album Cover _ Ariana Grande - Positions (Deluxe).jpg">
-                                    <h4>Positions</h4>
-                                    <ul>
-                                        <li>2020</li>
-                                    </ul>
-                                </div>
-                                <div class="album">
-                                    <img src="../img/eternal sunshine album cover.jpg">
-                                    <h4>Eternal Sunhine</h4>
-                                    <ul>
-                                        <li>2024</li>
-                                    </ul>
-                                </div>
-                                <div class="album">
-                                    <img src="../img/Petal Ariana Grande ꕤ｡˚⋆ (1).jpg">
-                                    <h4>Petal</h4>
-                                    <ul>
-                                        <li>2026</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+            <!-- TÍTULO -->
+            <div class="discografiaArtista">
+                <h1>Ariana Grande</h1>
+                <h2>Discografia</h2>
+            </div>
 
 
-                        <button class="carrossel-botao anterior">‹</button>
-                        <button class="carrossel-botao proximo">›</button>
+            <!-- ÁLBUNS -->
+            <div class="albuns">
+                <h2>Álbuns</h2>
+            </div>
 
-                        <div class="carrosselIndicadores"></div>
-                    </div>
+            <!-- CARROSSEL -->
+            <section>
 
-                </section>
+                <div class="carrossel">
+                    <div class="albunsDiscografia">
 
+                        <div class="albunsGerais">
 
-                <div class="albunsEspeciais">
-                    <h2>Álbuns, Deluxe, Soundtrack's e Especiais</h2>
-                </div>
-
-
-
-
-                <!-- <div class="albunsEspeciais">
-                            <div class="outrosAlbuns">
-                                <img src="../img/ariana grande dangerous woman.jpg">
+                            <div class="album">
+                                <img src="../img/Yours Truly - Ariana Grande.jpg"
+                                    alt="Yours Truly">
                                 <h4>Yours Truly</h4>
                                 <ul>
                                     <li>2013</li>
                                 </ul>
                             </div>
-                        </div>  -->
 
+                            <div class="album">
+                                <img src="../img/25684660369884281.jpg"
+                                    alt="My Everything">
+                                <h4>My Everything</h4>
+                                <ul>
+                                    <li>2014</li>
+                                </ul>
+                            </div>
 
+                            <div class="album">
+                                <img src="../img/ariana grande dangerous woman.jpg"
+                                    alt="Dangerous Woman">
+                                <h4>Dangerous Woman</h4>
+                                <ul>
+                                    <li>2016</li>
+                                </ul>
+                            </div>
+
+                            <div class="album">
+                                <img src="../img/Album Cover _ Ariana Grande - Sweetener.jpg"
+                                    alt="Sweetener">
+                                <h4>Sweetener</h4>
+                                <ul>
+                                    <li>2018</li>
+                                </ul>
+                            </div>
+
+                            <div class="album">
+                                <img src="../img/Thank'u Next.jpg"
+                                    alt="Thank U, Next">
+                                <h4>Thank U, Next</h4>
+                                <ul>
+                                    <li>2019</li>
+                                </ul>
+                            </div>
+
+                            <div class="album">
+                                <img src="../img/Album Cover _ Ariana Grande - Positions (Deluxe).jpg"
+                                    alt="Positions">
+                                <h4>Positions</h4>
+                                <ul>
+                                    <li>2020</li>
+                                </ul>
+                            </div>
+
+                            <div class="album">
+                                <img src="../img/eternal sunshine album cover.jpg"
+                                    alt="Eternal Sunshine">
+                                <h4>Eternal Sunshine</h4>
+                                <ul>
+                                    <li>2024</li>
+                                </ul>
+                            </div>
+
+                            <div class="album">
+                                <img src="../img/Petal Ariana Grande ꕤ｡˚⋆ (1).jpg"
+                                    alt="Petal">
+                                <h4>Petal</h4>
+                                <ul>
+                                    <li>2026</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- BOTÕES -->
+                    <button class="carrossel-botao anterior"
+                        type="button">
+                        ‹
+                    </button>
+
+                    <button class="carrossel-botao proximo"
+                        type="button">
+                        ›
+                    </button>
+
+                    <div class="carrosselIndicadores"></div>
+
+                </div>
 
             </section>
 
-        </main>
 
-         <footer class="footer">
-                <div class="footer-cima">
-                    <img class="logo-footer" src="../img/Logo Quad.png" alt="">
-                    <div class="footer-cima-dir">
-                        <h3>Quem somos</h3>
-                        <p></p>
-                        <a href="">Musichub</a>
-                        <a href="">Fale Conosco</a>
-                        <h3>Fique por dentro</h3>
-                        <div class="icones-footer">
-                            <a href=""><img src="../img/icones/Face.svg" alt=""></a>
-                    <a href=""><img src="../img/icones/Instagram.svg" alt=""></a>
-                    <a href=""><img src="../img/icones/Linkedin.svg" alt=""></a>
+            <!-- OUTROS ÁLBUNS -->
+            <div class="albunsEspeciais">
+                <h2>Álbuns, Deluxe, Soundtrack's e Especiais</h2>
+            </div>
+
+            <section>
+                  <div class="carrossel2">
+                    <div class="albunsSecundarios">
+
+                        <div class="outrosAlbuns">
+
+                            <div class="albunsDeluxe">
+                                <img src="../img/25684660369884281.jpg"
+                                    alt="My Everything (Deluxe)">
+                                <h4>My Everything (Deluxe)</h4>
+                                <ul>
+                                    <li>2014</li>
+                                </ul>
+                            </div>
+
+                            <div class="albunsDeluxe">
+                                <img src="../img/Album Cover _ Ariana Grande - Positions (Deluxe).jpg"
+                                    alt="Positions (Deluxe)">
+                                <h4>Positions (Deluxe)</h4>
+                                <ul>
+                                    <li>2021</li>
+                                </ul>
+                            </div>
+
+                            <div class="albunsDeluxe">
+                                <!-- <img src="../img/pedir para a clara as imagens" -->
+                                    alt="Yours Truly (Tenth Anniversary Edition)">
+                                <h4>Yours Truly (Tenth Anniversary Edition)</h4>
+                                <ul>
+                                    <li>2021</li>
+                                </ul>
+                            </div>
+
+                            <div class="albunsDeluxe">
+                                <img src="../img/eternal sunshine album cover.jpg"
+                                    alt="Eternal Sunshine (Slightly Deluxe)">
+                                <h4>Eternal Sunshine (Slightly Deluxe)</h4>
+                                <ul>
+                                    <li>2024</li>
+                                </ul>
+                            </div>
+
+                            <div class="albunsDeluxe">
+                                <!-- <img src="../img/" -->
+                                    alt="Wicked: The Soundtrack">
+                                <h4>Wicked: The Soundtrack</h4>
+                                <ul>
+                                    <li>2024</li>
+                                </ul>
+                            </div>
+
+                            <div class="albunsDeluxe">
+                                <!-- <img src="../img/eternal sunshine deluxe brights days ahead" -->
+                                    alt="Pets deluxe bda">
+                                <h4>Positions (Deluxe)</h4>
+                                <ul>
+                                    <li>2021</li>
+                                </ul>
+                            </div>
+
+                            <div class="albunsDeluxe">
+                                <!-- <img src="../img/wicked for good" -->
+                                    alt="Pets deluxe bda">
+                                <h4>Positions (Deluxe)</h4>
+                                <ul>
+                                    <li>2021</li>
+                                </ul>
+                            </div>
+
+                            <div class="albunsDeluxe">
+                                <!-- <img src="../img/danrerous woman anniversary" -->
+                                    alt="Pets deluxe bda">
+                                <h4>Positions (Deluxe)</h4>
+                                <ul>
+                                    <li>2021</li>
+                                </ul>
+                            </div>
+                
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-cima">
+
+            <img class="logo-footer"
+                src="../img/Logo Quad.png"
+                alt="MusicHub">
+
+            <div class="footer-cima-dir">
+
+                <h3>Quem somos</h3>
+
+                <p></p>
+
+                <a href="">MusicHub</a>
+                <a href="">Fale Conosco</a>
+
+                <h3>Fique por dentro</h3>
+
+                <div class="icones-footer">
+
+                    <a href="">
+                        <img src="../img/icones/Face.svg" alt="">
+                    </a>
+
+                    <a href="">
+                        <img src="../img/icones/Instagram.svg" alt="">
+                    </a>
+
+                    <a href="">
+                        <img src="../img/icones/Linkedin.svg" alt="">
+                    </a>
+
                 </div>
+
             </div>
+
         </div>
+
+
         <span class="traco2"></span>
+
+
         <div class="footer-baixo">
+
             <p>©MusicHub</p>
+
             <div class="esq">
+
                 <a href="">Acessibilidade</a>
+
                 <a href="">Política de Privacidade</a>
+
                 <a href="">Política de Privacidade</a>
+
             </div>
-            
+
         </div>
+
     </footer>
 
-        <script src="../Artistas/discografia.js"></script>
+
+    <!-- JAVASCRIPT -->
+    <script src="discografia.js"></script>
+
 </body>
 
 </html>

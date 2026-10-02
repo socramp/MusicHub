@@ -1,16 +1,23 @@
-const imagens = document.querySelector(".album");
-const slides = document.querySelectorAll(".album img");
+const imagens = document.querySelector(".albunsGerais");
+
+const slides = document.querySelectorAll(".album");
 
 const botaoAnterior = document.querySelector(".anterior");
+
 const botaoProximo = document.querySelector(".proximo");
 
-const indicadoresContainer = document.querySelector(".carrosselIdicadores");
+const indicadoresContainer =
+    document.querySelector(".carrosselIndicadores");
+
 
 let slideAtual = 0;
+
 let intervalo;
 
 
-/* CRIA AS BOLINHAS */
+/* ================================================= */
+/*              CRIA OS INDICADORES                  */
+/* ================================================= */
 
 slides.forEach((slide, index) => {
 
@@ -18,9 +25,13 @@ slides.forEach((slide, index) => {
 
     indicador.classList.add("indicador");
 
+
     if (index === 0) {
+
         indicador.classList.add("ativo");
+
     }
+
 
     indicador.addEventListener("click", () => {
 
@@ -29,68 +40,113 @@ slides.forEach((slide, index) => {
         atualizarCarrossel();
 
         reiniciarIntervalo();
+
     });
 
+
     indicadoresContainer.appendChild(indicador);
+
 });
 
 
-const indicadores = document.querySelectorAll(".indicador");
+const indicadores =
+    document.querySelectorAll(".indicador");
 
 
-/* MOVE O CARROSSEL */
+/* ================================================= */
+/*             ATUALIZA O CARROSSEL                  */
+/* ================================================= */
 
 function atualizarCarrossel() {
 
-    const larguraCarrossel =
-        document.querySelector(".carrossel").clientWidth;
+    /*
+        Cada álbum possui 200px
+        O espaço entre eles é 50px
+
+        Portanto:
+
+        200 + 50 = 250px
+    */
+
+    const larguraAlbum = slides[0].offsetWidth;
+
+    const gap = 50;
+
+
+    const deslocamento =
+        slideAtual * (larguraAlbum + gap);
+
 
     imagens.style.transform =
-        `translateX(-${slideAtual * larguraCarrossel}px)`;
+        `translateX(-${deslocamento}px)`;
 
-    indicadores.forEach(indicador => {
+
+    /* atualiza as bolinhas */
+
+    indicadores.forEach((indicador) => {
+
         indicador.classList.remove("ativo");
+
     });
 
+
     indicadores[slideAtual].classList.add("ativo");
+
 }
 
 
-/* PRÓXIMA IMAGEM */
+/* ================================================= */
+/*                 PRÓXIMO                            */
+/* ================================================= */
 
 function proximoSlide() {
 
     slideAtual++;
 
+
     if (slideAtual >= slides.length) {
+
         slideAtual = 0;
+
     }
 
+
     atualizarCarrossel();
+
 }
 
 
-/* IMAGEM ANTERIOR */
+/* ================================================= */
+/*                 ANTERIOR                           */
+/* ================================================= */
 
 function slideAnterior() {
 
     slideAtual--;
 
+
     if (slideAtual < 0) {
+
         slideAtual = slides.length - 1;
+
     }
 
+
     atualizarCarrossel();
+
 }
 
 
-/* BOTÕES */
+/* ================================================= */
+/*                   BOTÕES                           */
+/* ================================================= */
 
 botaoProximo.addEventListener("click", () => {
 
     proximoSlide();
 
     reiniciarIntervalo();
+
 });
 
 
@@ -99,10 +155,13 @@ botaoAnterior.addEventListener("click", () => {
     slideAnterior();
 
     reiniciarIntervalo();
+
 });
 
 
-/* PASSA AUTOMATICAMENTE */
+/* ================================================= */
+/*             PASSAGEM AUTOMÁTICA                   */
+/* ================================================= */
 
 function iniciarIntervalo() {
 
@@ -115,14 +174,23 @@ function iniciarIntervalo() {
 }
 
 
-/* REINICIA O TEMPO AO CLICAR */
+/* ================================================= */
+/*             REINICIA O INTERVALO                  */
+/* ================================================= */
 
 function reiniciarIntervalo() {
 
     clearInterval(intervalo);
 
     iniciarIntervalo();
+
 }
 
+
+/* ================================================= */
+/*                    INICIA                          */
+/* ================================================= */
+
+atualizarCarrossel();
 
 iniciarIntervalo();
