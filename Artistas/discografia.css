@@ -240,9 +240,7 @@ main {
 }
 
 
-/* ================================================= */
-/*                 INDICADORES                       */
-/* ================================================= */
+/* =============== INDICADORES ================= */
 
 .carrosselIndicadores {
     display: flex;
@@ -280,8 +278,168 @@ main {
 
 .albunsEspeciais h2 {
     margin-top: 60px;
-
     border-bottom: 1px solid var(--cinza);
-
     padding-bottom: 8px;
+}
+
+/* ============ CARROSSEL ================== */
+
+.carrossel2 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.albunsSecundarios {
+    width: 100%;
+    overflow: hidden;
+}
+
+.outrosAlbuns {
+    display: flex;
+
+    flex-direction: row;
+
+    flex-wrap: nowrap;
+
+    gap: 50px;
+
+    margin-top: 60px;
+
+    width: max-content;
+
+    transition: transform 0.5s ease;
+}
+
+
+/* cada álbum */
+
+.albunsDeluxe {
+    flex: 0 0 200px;
+
+    width: 200px;
+
+    text-align: center;
+}
+
+
+/* capa */
+
+.albunsDeluxe img {
+    display: block;
+
+    width: 200px;
+    height: 200px;
+
+    object-fit: cover;
+}
+
+
+/* nome */ 
+.albunsDeluxe h4 {
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 20px;
+
+    margin-bottom: 0;
+} 
+
+
+/* ano */
+
+.albunsDeluxe ul {
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 5px;
+
+    padding-left: 0;
+
+    list-style-position: inside;
+}
+
+
+/* ===== BOTÕES ===== */
+
+.carrossel2-botao {
+    position: absolute;
+
+    top: 42%;
+
+    transform: translateY(-50%);
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    color: white;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    font-size: 1.5rem;
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    transition: 0.3s;
+}
+
+.carrossel2-botao:hover {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+
+/* botão esquerdo */
+
+.anterior {
+    left: 10px;
+}
+
+
+/* botão direito */
+
+.proximo {
+    right: 10px;
+}
+
+
+/* ==================== INDICADORES  ===================== */
+
+.carrosselIndicadores2 {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+.indicador {
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: var(--cinza);
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.indicador.ativo {
+    background: var(--destaque);
+
+    transform: scale(1.2);
 }
