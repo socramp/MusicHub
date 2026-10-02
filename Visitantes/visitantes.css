@@ -52,6 +52,7 @@ header {
     flex: 0 0 100%;
 
     object-fit: cover;
+    object-position: center;
 }
 
 
@@ -373,4 +374,24 @@ strong{
 .esq a{
     text-decoration: none;
     color: #ddb4c1;
+}
+
+/* =================================================================================================== */
+@media (max-width: 1000px) {
+    .carrossel {
+        height: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carrossel {
+        height: 250px;
+    }
+}
+
+@media (max-width: 720px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
