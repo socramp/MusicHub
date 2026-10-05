@@ -99,7 +99,7 @@ main {
 
 
 /* ================================================= */
-/*                 CARROSSEL                         */
+/*                 CARROSSEL 1                       */
 /* ================================================= */
 
 .carrossel {
@@ -192,7 +192,7 @@ main {
 }
 
 
-/* ===== BOTÕES ===== */
+/* ===== BOTÕES CARROSSEL 1 ===== */
 
 .carrossel-botao {
     position: absolute;
@@ -228,19 +228,19 @@ main {
 
 /* botão esquerdo */
 
-.anterior {
+.carrossel-botao.anterior {
     left: 10px;
 }
 
 
 /* botão direito */
 
-.proximo {
+.carrossel-botao.proximo {
     right: 10px;
 }
 
 
-/* =============== INDICADORES ================= */
+/* =============== INDICADORES CARROSSEL 1 ================= */
 
 .carrosselIndicadores {
     display: flex;
@@ -274,27 +274,44 @@ main {
 }
 
 
-/* ===== ÁLBUNS ESPECIAIS ===== */
+/* ================================================= */
+/*              ÁLBUNS ESPECIAIS                     */
+/* ================================================= */
 
 .albunsEspeciais h2 {
     margin-top: 60px;
+
     border-bottom: 1px solid var(--cinza);
+
     padding-bottom: 8px;
 }
 
-/* ============ CARROSSEL ================== */
+
+/* ================================================= */
+/*                 CARROSSEL 2                       */
+/* ================================================= */
 
 .carrossel2 {
     position: relative;
+
     width: 100%;
+
     overflow: hidden;
+
     padding-bottom: 20px;
 }
 
+
+/* janela que esconde os álbuns que estão fora */
+
 .albunsSecundarios {
     width: 100%;
+
     overflow: hidden;
 }
+
+
+/* conjunto inteiro dos álbuns */
 
 .outrosAlbuns {
     display: flex;
@@ -336,7 +353,8 @@ main {
 }
 
 
-/* nome */ 
+/* nome */
+
 .albunsDeluxe h4 {
     display: flex;
 
@@ -345,7 +363,7 @@ main {
     margin-top: 20px;
 
     margin-bottom: 0;
-} 
+}
 
 
 /* ano */
@@ -363,7 +381,9 @@ main {
 }
 
 
-/* ===== BOTÕES ===== */
+/* ================================================= */
+/*             BOTÕES CARROSSEL 2                   */
+/* ================================================= */
 
 .carrossel2-botao {
     position: absolute;
@@ -399,19 +419,21 @@ main {
 
 /* botão esquerdo */
 
-.anterior {
+.carrossel2-botao.anterior {
     left: 10px;
 }
 
 
 /* botão direito */
 
-.proximo {
+.carrossel2-botao.proximo {
     right: 10px;
 }
 
 
-/* ==================== INDICADORES  ===================== */
+/* ================================================= */
+/*          INDICADORES CARROSSEL 2                 */
+/* ================================================= */
 
 .carrosselIndicadores2 {
     display: flex;
@@ -425,7 +447,10 @@ main {
     margin-top: 20px;
 }
 
-.indicador {
+
+/* bolinha */
+
+.indicador2 {
     width: 9px;
     height: 9px;
 
@@ -438,7 +463,10 @@ main {
     transition: 0.3s;
 }
 
-.indicador.ativo {
+
+/* bolinha ativa */
+
+.indicador2.ativo {
     background: var(--destaque);
 
     transform: scale(1.2);
