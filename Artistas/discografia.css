@@ -8,7 +8,6 @@ main {
     padding-right: 45px;
 
     width: calc(100% - 270px);
-
     color: var(--branco);
 }
 
@@ -41,7 +40,6 @@ main {
     height: 18px;
 }
 
-
 /* ===== ARTISTA ===== */
 
 .artistas {
@@ -52,9 +50,7 @@ main {
     margin-top: auto;
 
     width: 90%;
-
     height: 90%;
-
     overflow: hidden;
 }
 
@@ -65,14 +61,11 @@ main {
     display: block;
 }
 
-
 /* ===== TÍTULO ===== */
 
 .discografiaArtista {
     width: 100%;
-
     padding-top: 25px;
-
     text-align: center;
 }
 
@@ -86,7 +79,6 @@ main {
     justify-content: center;
 }
 
-
 /* ===== TÍTULO ÁLBUNS ===== */
 
 .albuns h2 {
@@ -98,159 +90,104 @@ main {
 }
 
 
-/* ================================================= */
-/*                 CARROSSEL                         */
-/* ================================================= */
+/* ======== CARROSSEL 1 ========= */
 
 .carrossel {
     position: relative;
-
     width: 100%;
-
     overflow: hidden;
-
     padding-bottom: 20px;
 }
 
-
-/* janela que esconde os álbuns que estão fora */
-
 .albunsDiscografia {
     width: 100%;
-
     overflow: hidden;
 }
 
-
-/* conjunto inteiro dos álbuns */
-
 .albunsGerais {
     display: flex;
-
     flex-direction: row;
-
     flex-wrap: nowrap;
-
     gap: 50px;
 
     margin-top: 60px;
-
     width: max-content;
-
     transition: transform 0.5s ease;
 }
 
-
-/* cada álbum */
-
 .album {
     flex: 0 0 200px;
-
     width: 200px;
 
     text-align: center;
 }
-
-
-/* capa */
-
 .album img {
     display: block;
-
     width: 200px;
     height: 200px;
-
     object-fit: cover;
 }
 
-
-/* nome */
-
 .album h4 {
     display: flex;
-
     justify-content: center;
 
     margin-top: 20px;
-
     margin-bottom: 0;
 }
 
-
-/* ano */
-
 .album ul {
     display: flex;
-
     justify-content: center;
 
     margin-top: 5px;
-
     padding-left: 0;
 
-    list-style-position: inside;
+    list-style-position: inside; /* para deixar as bolinhas (marcadores) fora (nesse caso, dentro) da lista*/
 }
-
-
-/* ===== BOTÕES ===== */
 
 .carrossel-botao {
     position: absolute;
-
     top: 42%;
-
     transform: translateY(-50%);
 
     width: 50px;
     height: 50px;
 
     border: none;
-
     border-radius: 50%;
 
-    color: white;
-
-    background: rgba(0, 0, 0, 0.45);
+    color: var(--branco);
+    background: #00000073;
 
     font-size: 1.5rem;
-
     cursor: pointer;
-
     z-index: 10;
-
     transition: 0.3s;
 }
 
 .carrossel-botao:hover {
-    background: rgba(0, 0, 0, 0.75);
+    background: #000000bf;
 }
 
-
-/* botão esquerdo */
-
-.anterior {
+.carrossel-botao.anterior {
     left: 10px;
 }
 
-
-/* botão direito */
-
-.proximo {
+.carrossel-botao.proximo {
     right: 10px;
 }
 
 
-/* =============== INDICADORES ================= */
+/* ====== INDICADORES DO CARROSSEL 1 ======= */
 
 .carrosselIndicadores {
     display: flex;
 
     justify-content: center;
-
     align-items: center;
 
     gap: 8px;
-
     margin-top: 20px;
 }
 
@@ -259,30 +196,27 @@ main {
     height: 9px;
 
     border-radius: 50%;
-
     background: var(--cinza);
 
     cursor: pointer;
-
     transition: 0.3s;
 }
 
 .indicador.ativo {
     background: var(--destaque);
-
     transform: scale(1.2);
 }
 
-
-/* ===== ÁLBUNS ESPECIAIS ===== */
+/* ============== ÁLBUNS ESPECIAIS  ============ */
 
 .albunsEspeciais h2 {
     margin-top: 60px;
+
     border-bottom: 1px solid var(--cinza);
     padding-bottom: 8px;
 }
 
-/* ============ CARROSSEL ================== */
+/* ============CARROSSEL 2 ================== */
 
 .carrossel2 {
     position: relative;
@@ -298,33 +232,21 @@ main {
 
 .outrosAlbuns {
     display: flex;
-
     flex-direction: row;
-
     flex-wrap: nowrap;
 
     gap: 50px;
 
     margin-top: 60px;
-
     width: max-content;
-
     transition: transform 0.5s ease;
 }
 
-
-/* cada álbum */
-
 .albunsDeluxe {
     flex: 0 0 200px;
-
     width: 200px;
-
     text-align: center;
 }
-
-
-/* capa */
 
 .albunsDeluxe img {
     display: block;
@@ -335,20 +257,13 @@ main {
     object-fit: cover;
 }
 
-
-/* nome */ 
 .albunsDeluxe h4 {
     display: flex;
-
     justify-content: center;
 
     margin-top: 20px;
-
     margin-bottom: 0;
-} 
-
-
-/* ano */
+}
 
 .albunsDeluxe ul {
     display: flex;
@@ -363,11 +278,10 @@ main {
 }
 
 
-/* ===== BOTÕES ===== */
+/* ==============BOTÕES CARROSSEL 2 ================= */
 
 .carrossel2-botao {
     position: absolute;
-
     top: 42%;
 
     transform: translateY(-50%);
@@ -376,70 +290,54 @@ main {
     height: 50px;
 
     border: none;
-
     border-radius: 50%;
 
-    color: white;
-
-    background: rgba(0, 0, 0, 0.45);
+    color: var(--branco);
+    background: #00000073;
 
     font-size: 1.5rem;
 
     cursor: pointer;
-
     z-index: 10;
-
     transition: 0.3s;
 }
 
 .carrossel2-botao:hover {
-    background: rgba(0, 0, 0, 0.75);
+    background: #000000bf;
 }
 
-
-/* botão esquerdo */
-
-.anterior {
+.carrossel2-botao.anterior {
     left: 10px;
 }
 
-
-/* botão direito */
-
-.proximo {
+.carrossel2-botao.proximo {
     right: 10px;
 }
 
 
-/* ==================== INDICADORES  ===================== */
+/* ==============INDICADORES DO CARROSSEL 2 =========== */
 
 .carrosselIndicadores2 {
     display: flex;
-
     justify-content: center;
-
     align-items: center;
 
     gap: 8px;
-
     margin-top: 20px;
 }
 
-.indicador {
+.indicador2 {
     width: 9px;
     height: 9px;
 
     border-radius: 50%;
-
     background: var(--cinza);
 
     cursor: pointer;
-
     transition: 0.3s;
 }
 
-.indicador.ativo {
+.indicador2.ativo {
     background: var(--destaque);
-
     transform: scale(1.2);
 }
