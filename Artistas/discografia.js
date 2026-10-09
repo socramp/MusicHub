@@ -1,5 +1,4 @@
 // ================ CARROSSEL 1==========================
-
 const imagens = document.querySelector(".albunsGerais");
 const slides = document.querySelectorAll(".album");
 
@@ -11,7 +10,6 @@ const indicadoresContainer =
 
 let slideAtual = 0;
 let intervalo;
-
 
 // ================INDICADORES DO CARROSSEL 1===============
 
@@ -42,9 +40,7 @@ slides.forEach((slide, index) => {
 const indicadores =
     document.querySelectorAll(".carrosselIndicadores .indicador");
 
-
 // ================ATUALIZA CARROSSEL 1====================================
-
 function atualizarCarrossel() {
 
     const larguraAlbum = slides[0].offsetWidth;
@@ -85,7 +81,6 @@ function proximoSlide() {
 
 }
 
-
 // ================ANTERIOR - CARROSSEL 1===========================
 
 function slideAnterior() {
@@ -101,7 +96,6 @@ function slideAnterior() {
     atualizarCarrossel();
 
 }
-
 
 // =============== BOTÕES - CARROSSEL 1 ====================
 
@@ -143,16 +137,13 @@ function reiniciarIntervalo() {
 
 }
 
-
 // =================INICIA CARROSSEL 1=============================
 
 atualizarCarrossel();
 
 iniciarIntervalo();
 
-
 // ===============CARROSSEL 2===================================
-
 const imagens2 =
     document.querySelector(".outrosAlbuns");
 
@@ -171,9 +162,7 @@ const indicadoresContainer2 =
 let slideAtual2 = 0;
 let intervalo2;
 
-
 // ==============INDICADORES DO CARROSSEL 2=====================
-
 slides2.forEach((slide, index) => {
 
     const indicador2 = document.createElement("div");
@@ -205,9 +194,7 @@ const indicadores2 =
     document.querySelectorAll(".carrosselIndicadores2 .indicador2");
 
 
-// =================================================
-// ATUALIZA CARROSSEL 2
-// =================================================
+// ==============ATUALIZA CARROSSEL 2 ===========
 
 function atualizarCarrossel2() {
 
@@ -234,9 +221,7 @@ function atualizarCarrossel2() {
 }
 
 
-// =================================================
-// PRÓXIMO - CARROSSEL 2
-// =================================================
+// =============== PRÓXIMO - CARROSSEL 2 ======================
 
 function proximoSlide2() {
 
@@ -253,9 +238,7 @@ function proximoSlide2() {
 }
 
 
-// =================================================
-// ANTERIOR - CARROSSEL 2
-// =================================================
+// ================ANTERIOR - CARROSSEL ==========================
 
 function slideAnterior2() {
 
@@ -272,9 +255,7 @@ function slideAnterior2() {
 }
 
 
-// =================================================
-// BOTÕES - CARROSSEL 2
-// =================================================
+// ============= BOTÕES - CARROSSEL 2 =======================
 
 botaoProximo2.addEventListener("click", () => {
 
@@ -293,9 +274,7 @@ botaoAnterior2.addEventListener("click", () => {
 });
 
 
-// =================================================
-// PASSAGEM AUTOMÁTICA - CARROSSEL 2
-// =================================================
+// =============== PASSAGEM AUTOMÁTICA - CARROSSEL 2 ======================
 
 function iniciarIntervalo2() {
 
@@ -317,9 +296,7 @@ function reiniciarIntervalo2() {
 }
 
 
-// =================================================
-// INICIA CARROSSEL 2
-// =================================================
+// ============ INICIA O CARROSSEL 2 ======================
 
 atualizarCarrossel2();
 
