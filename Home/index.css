@@ -152,12 +152,6 @@ article {
 
 
 /*----------------------------------------------------------------------------------*/
-.generos{
-    overflow-x: scroll;
-}
-.generos::-webkit-scrollbar {
-    display: none;
-}
 .genero {
     padding: 7px 45px;
     width: fit-content;
@@ -169,7 +163,7 @@ article {
 .genero:hover {
     transform: translateY(-2px);
     transition: transform 0.2s ease;
-    box-shadow: 7px 7px 7px 7px var(--cor);
+    box-shadow: 7px 7px 7px var(--cor);
 }
 
 .genero a {
