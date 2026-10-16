@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Artista</title>
+    <link rel="stylesheet" href="../Global/global.css">
+    <link rel="stylesheet" href="login-cadastro.css">
+    <link rel="shortcut icon" href="../img/logoMusicHub.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="tela-login">
+        <div class="cabecalho">
+            <!-- <div class="imagem-cabecalho"> -->
+            <a href="/Home/index.html">
+                <img src="/img/LogoQuadFundo.png" alt="Logo do MusicHub"></a>
+            <!-- </div> -->
+            <div class="texto-cabecalho-cadastro">
+                <div class="texto-cabecalho">
+                    <h1>Cadastrar Artista</h1>
+                </div>
+            </div>
+        </div>
+
+        <form action="#" class="formulario-cadastroArtista">
+            <div class="perfil-artistico">
+                <h2>Perfil Artístico</h2>
+                <section class="input-esquerda">
+                    <div class="campo">
+                        <label for="name-artistico">Nome Artístico</label>
+                        <input type="text" placeholder="Nome Artístico" class="input-form">
+                    </div>
+                    <div class="campo">
+                        <label for="biografia">Biografia</label>
+                        <input type="text" placeholder="Biografia" class="input-form" id="biografia">
+                    </div>
+                </section>
+                <section class="input-direita">
+                    <div class="campo">
+                        <label for="estilo-musical">Estilo Musical</label>
+                        <input type="text" placeholder="Estilo Musical" class="input-form" id="estilo-musical">
+                    </div>
+                    <div class="campo">
+                        <label for="anoDebut">Ano de início da carreira</label>
+                        <input type="text" placeholder="Ano de início da carreira" class="input-form" id="anoDebut">
+                    </div>
+                </section>
+            </div>
+
+            <div class="informacoes-pessoais">
+                <section class="input-esquerda">
+                    <h2>Informações Pessoais</h2>
+                    <div class="campo">
+                        <label for="nome-completo">Nome Completo</label>
+                        <input type="text" placeholder="Nome Completo" class="input-form" id="nome">
+                    </div>
+                    <div class="campo">
+                        <label for="data-nascimento">Data de Nascimento</label>
+                        <input type="text" placeholder="Data de Nascimento" class="input-form" id="data-nascimento">
+                    </div>
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="text" placeholder="E-mail" class="input-form" id="e-mail">
+                    </div>
+                </section>
+                <section class="input-direita">
+                    <div class="campo">
+                        <label for="cpf">CPF</label>
+                        <input type="text" placeholder="CPF" class="input-form" id="cpf">
+                    </div>
+                    <div class="campo">
+                        <label for="pais">País</label>
+                        <input type="text" placeholder="País" class="input-form" id="pais">
+                    </div>
+                    <div class="campo">
+                        <label for="senha">Senha</label>
+                        <input type="password" placeholder="Senha" class="input-form" id="senha">
+                    </div>
+                </section>
+            </div>
+        </form>
+        <div class="botoes">
+            <label class="link-termos">
+                <input type="checkbox">
+                Eu concordo com os <a href="/Termos/termo.html">termos e condições</a>
+            </label>
+            <!-- <p class="link-termos">Eu concordo com os <a href="/Termos/termo.html">termos e condições</a></p>   -->
+            <button class="botao-cadastrar">CADASTRAR</button>
+        </div>
+    </div>
+</body>
+
+</html>

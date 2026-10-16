@@ -1,0 +1,367 @@
+/* =========================================
+   CONFIGURAÇÃO GERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    background-color: #202238;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* =========================================
+   CAIXA DO PERFIL
+========================================= */
+
+.perfil-container {
+    width: calc(100% - 48px);
+    height: calc(100vh - 47px);
+
+    border: 2px solid #a71942;
+
+    background-color: #202238;
+
+    position: relative;
+}
+
+
+/* =========================================
+   TÍTULO
+========================================= */
+
+h1 {
+    position: absolute;
+
+    top: 32px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: white;
+
+    font-size: 28px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   LOGO MUSIC HUB
+========================================= */
+
+.logo-area {
+    position: absolute;
+
+    left: 30px;
+    top: 13px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 6px;
+}
+
+
+.logo-area span {
+    color: white;
+
+    font-size: 9px;
+}
+
+
+/* Círculo externo */
+
+.logo {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    background-color: #9d173e;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    box-shadow:
+        0 0 0 8px rgba(157, 23, 62, 0.25);
+}
+
+
+/* Círculo interno */
+
+.logo-centro {
+    width: 17px;
+    height: 17px;
+
+    border-radius: 50%;
+
+    background-color: #202238;
+
+    position: relative;
+}
+
+
+/* Bolinha dentro da logo */
+
+.logo-centro::after {
+    content: "";
+
+    position: absolute;
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background-color: #e01d4e;
+
+    top: 5px;
+    left: 5px;
+}
+
+
+/* =========================================
+   PERFIL
+========================================= */
+
+.perfil {
+    position: absolute;
+
+    top: 95px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+/* =========================================
+   FOTO
+========================================= */
+
+.foto-container {
+    width: 130px;
+    height: 130px;
+
+    position: relative;
+}
+
+
+.foto-perfil {
+    width: 130px;
+    height: 130px;
+
+    border-radius: 50%;
+
+    background-color: white;
+
+    /* Padrão quadriculado */
+
+    background-image:
+
+        linear-gradient(
+            45deg,
+            #eeeeee 25%,
+            transparent 25%
+        ),
+
+        linear-gradient(
+            -45deg,
+            #eeeeee 25%,
+            transparent 25%
+        ),
+
+        linear-gradient(
+            45deg,
+            transparent 75%,
+            #eeeeee 75%
+        ),
+
+        linear-gradient(
+            -45deg,
+            transparent 75%,
+            #eeeeee 75%
+        );
+
+    background-size: 16px 16px;
+
+    background-position:
+        0 0,
+        0 8px,
+        8px -8px,
+        -8px 0;
+}
+
+
+/* =========================================
+   BOLINHA CINZA
+========================================= */
+
+.indicador {
+    position: absolute;
+
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+
+    background-color: #999999;
+
+    right: 4px;
+    bottom: -11px;
+}
+
+
+/* =========================================
+   NOME
+========================================= */
+
+.perfil h2 {
+    margin-top: 25px;
+
+    color: white;
+
+    font-size: 27px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   ABAS
+========================================= */
+
+.abas {
+    position: absolute;
+
+    top: 291px;
+
+    left: 20px;
+    right: 20px;
+
+    padding-top: 12px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.abas a {
+    color: #eeeeee;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+.abas a:hover {
+    color: white;
+}
+
+
+/* =========================================
+   CONTEÚDO
+========================================= */
+
+.conteudo {
+    position: absolute;
+
+    top: 360px;
+
+    left: 20px;
+    right: 20px;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 600px) {
+
+    body {
+        align-items: flex-start;
+    }
+
+
+    .perfil-container {
+        width: 100%;
+        height: 100vh;
+
+        border-top: none;
+        border-bottom: none;
+    }
+
+
+    /* Logo */
+
+    .logo-area {
+        left: 20px;
+        top: 15px;
+    }
+
+
+    /* Título */
+
+    h1 {
+        top: 30px;
+
+        font-size: 24px;
+    }
+
+
+    /* Perfil */
+
+    .perfil {
+        top: 95px;
+    }
+
+
+    /* Foto */
+
+    .foto-container,
+    .foto-perfil {
+        width: 120px;
+        height: 120px;
+    }
+
+    .perfil h2 {
+        font-size: 24px;
+    }
+
+
+}
