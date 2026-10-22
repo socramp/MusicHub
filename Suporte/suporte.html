@@ -1,31 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suporte</title>
+    <title>MusicHub - Suporte</title>
     <link rel="stylesheet" href="../Global/global.css">
     <link rel="stylesheet" href="suporte.css">
     <link rel="shortcut icon" href="../img/logoMusicHub.png" type="image/x-icon">
 </head>
 <body>
+
+    <!-- Cabeçalho -->
     <div class="nav">
-        <a href="">
-            <img src="../img/Logo Quad.png" alt="">
+        <a href="../Home/index.html">
+            <img src="../img/Logo Quad.png" alt="MusicHub Logo">
         </a>
-        <h1>Termos e Condições</h1>
+        <h1>Central de Suporte</h1>
     </div>
 
+    <!-- Container Principal -->
     <div class="textao">
         <section class="conteudo">
-    
+
+            <!-- DÚVIDAS FREQUENTES (FAQ) -->
+            <div class="secao-faq">
+                <h2>Dúvidas Frequentes</h2>
+                <div class="faq-lista">
+                    <details class="faq-item">
+                        <summary>Como alterar a minha senha?</summary>
+                        <p>Acesse o menu do seu perfil no canto superior direito, selecione <strong>Configurações > Segurança</strong> e clique em "Alterar Senha".</p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Quais formas de pagamento são aceitas?</summary>
+                        <p>Aceitamos cartões de crédito (Visa, Mastercard, Elo), PIX e boleto bancário para planos anuais.</p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Como cancelar minha assinatura?</summary>
+                        <p>Você pode cancelar quando quiser em <strong>Perfil > Assinatura > Cancelar Plano</strong>. O acesso permanece ativo até o fim do período já pago.</p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>O áudio está travando ou não carrega, o que fazer?</summary>
+                        <p>Verifique sua conexão com a internet, limpe o cache do seu navegador/aplicativo ou verifique a página de status dos nossos servidores.</p>
+                    </details>
+                </div>
+            </div>
+
+            <!-- CONTATO E FORMULÁRIO (EM EMPILHAMENTO VERTICAL) -->
+            <div class="secao-contato">
+                <h2>Atendimento e Suporte</h2>
+                <div class="info-contato-topo">
+                    <h3>Fale Conosco</h3>
+                    <p class="txt-simples">
+                        Não encontrou a resposta? Nossa equipe está pronta para ajudar você. 
+                        <strong>Horário de Atendimento:</strong> Segunda a Sexta — 08h às 20h. 
+                    </p>
+                </div>
+
+                <!-- Formulário -->
+                <div class="form-container">
+                    <h3>Envie uma Mensagem</h3>
+                    <form action="#" method="POST" class="form-suporte">
+                        <div class="input-group">
+                            <label for="nome">Seu Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="email">E-mail de Cadastro</label>
+                            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="categoria">Qual é o assunto?</label>
+                            <select id="categoria" name="categoria" required>
+                                <option value="" disabled selected>Selecione o motivo</option>
+                                <option value="tecnico">Problema Técnico / Bug</option>
+                                <option value="cobranca">Dúvidas de Cobrança / Pagamento</option>
+                                <option value="conta">Acesso à Conta</option>
+                                <option value="sugestao">Sugestão ou Elogio</option>
+                                <option value="outro">Outro assunto</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="mensagem">Descrição do Problema</label>
+                            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva o que aconteceu em detalhes..." required></textarea>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="anexo">Anexar Print/Imagem (opcional)</label>
+                            <input type="file" id="anexo" name="anexo" accept="image/*,.pdf">
+                        </div>
+
+                        <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                    </form>
+                </div>
+
+                <!-- Canais de Contato & Redes Embaixo -->
+                <div class="redes-sociais">
+                    <h4>Canais de Contato & Redes</h4>
+                    <div class="social-links">
+                        <a href="mailto:suporte@musichub.com" class="social-btn">✉️ suporte@musichub.com</a>
+                        <a href="#" target="_blank" class="social-btn">Instagram</a>
+                        <a href="#" target="_blank" class="social-btn">Discord</a>
+                        <a href="#" target="_blank" class="social-btn">X / Twitter</a>
+                        <a href="#" target="_blank" class="social-btn">YouTube</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- feedback -->
+            <div class="secao-feedback">
+                <h3>Esta página foi útil para você?</h3>
+                <div class="feedback-botoes">
+                    <button type="button" class="btn-feedback" onclick="enviarFeedback(true)">👍 Sim</button>
+                    <button type="button" class="btn-feedback" onclick="enviarFeedback(false)">👎 Não</button>
+                </div>
+                
+                <div id="feedback-campo" class="feedback-comentario" style="display: none;">
+                    <p>O que podemos fazer para melhorar essa ajuda?</p>
+                    <textarea placeholder="Conte-nos o que faltou..."></textarea>
+                    <button type="button" class="btn-enviar-feedback" onclick="confirmarComentario()">Enviar Sugestão</button>
+                </div>
+                <p id="feedback-mensagem-obrigado" class="mensagem-sucesso" style="display: none;">Obrigado pelo seu feedback! ❤️</p>
+            </div>
+
         </section>
     </div>
+
+    <!-- Botão Retornar -->
     <div class="botao-termos">
         <a href="../Home/index.html">
             <button>Rertonar</button>
         </a>
     </div>
-    <span></span>
+
+    <script src="suporte.js"></script>
 </body>
 </html>
