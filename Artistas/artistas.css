@@ -1,3 +1,4 @@
+
 /* ===== PRINCIPA (DO ARTISTA) ===== */
 main {
     margin-left: 270px;
@@ -72,8 +73,8 @@ main {
 }
 
 .musica-atual>img {
-    width: 90px;
-    height: 90px;
+    width: 150px;
+    height: 150px;
 
     background-size: cover;
 }
@@ -85,19 +86,19 @@ main {
 .musica-atual p {
     margin: 3px 0;
 
-    font-size: 11px;
+    font-size: 25px;
 
     color: var(--branco);
 }
 
 .musica-atual h1 {
     margin: 3px 0;
-    font-size: 15px;
+    font-size: 30px;
     color: var(--branco);
 }
 
 /* =========== PERIODO MÚSICA =============== */
-.periodoMusica {
+/* .periodoMusica {
     height: 4px;
 
     margin-left: 90px;
@@ -126,10 +127,10 @@ main {
 
     border-radius: 50%;
     background-color: var(--destaque);
-}
+} */
 
 /* =========== CONTROLES ============ */
-.controles {
+/* .controles {
     display: flex;
     align-items: center;
 
@@ -137,13 +138,13 @@ main {
 
     margin-left: 430px;
     margin-top: 12px;
-}
+} */
 
 .controles button {
     border: none;
     background: transparent;
 
-    padding: 30px;
+    padding: 70px;
 
     display: flex;
     align-items: center;
@@ -157,7 +158,7 @@ main {
     height: 20px;
 }
 
-/* PLAY */
+/* PLAY
 #play {
     width: 46px;
     height: 46px;
@@ -165,7 +166,7 @@ main {
     border-radius: 50%;
     border: 2px solid #e92a70;
     background-color: var(--destaque);
-}
+} */
 
 /* MOSTRAR LETRA */
 .controles .letra {
