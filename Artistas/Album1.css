@@ -1,0 +1,67 @@
+/* ===== PRINCIPA (DO ARTISTA) ===== */
+main {
+    margin-left: 270px;
+    padding-top: 85px;
+
+    padding-left: 45px;
+    padding-right: 45px;
+
+    width: calc(100% - 270px);
+    color: var(--branco);
+}
+
+/* ======== BOTÃO VOLTAR =============== */
+.voltar {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.voltar button {
+    width: 90px;
+    height: 35px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: var(--destaque);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.voltar button img {
+    width: 18px;
+    height: 18px;
+}
+
+/* ====== CAPA ALBUM ======= */
+
+.capa-album img {
+    width: 280px;
+    height: 280px;
+}
+
+.capa-album h1 {
+    align-items: center;
+      padding: 70px;
+    flex-direction: row;
+    font-size: 50px;
+    text-align: center;
+
+}
+
+.capa-album h2 {
+    align-items: center;
+    padding: 70px;
+    flex-direction: row;
+    font-size: 40px;
+    text-align: center;
+}
+
+.musicaAlbum img {
+    width: 90px;
+    height:90px;
+}
