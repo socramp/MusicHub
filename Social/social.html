@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,159 @@
     <link rel="stylesheet" href="social.css">
     <link rel="shortcut icon" href="../img/logoMusicHub.png" type="image/x-icon">
 </head>
+
 <body>
-    
+    <header class="header">
+        <input type="text" placeholder="Buscar" id="input-buscar">
+        <a href="#meuModal" id="menu">
+            <img id="menu-img" src="../img/icones/menu.svg" alt="Menu">
+        </a>
+    </header>
+
+    <div id="meuModal" class="modal">
+        <!-- Fundo invisível/escuro que cobre a tela inteira -->
+        <a href="#" class="modal-fundo"></a>
+
+        <!-- Conteúdo do modal (fica por cima do fundo) -->
+        <div class="modal-coisas">
+            <a href="#" class="btn-fechar"><img src="../img/icones/fecharMenu.svg" alt=""></a>
+            <div class="nav-modal">
+                <img src="../img/LogoMusicHub.png" alt="">
+                <a href="../Configurações/configuracao.html" class="item-menu">
+                    <img src="../img/icones/engrenagem.svg" alt="">
+                    <p>Configurações</p>
+                </a>
+                <a href="../Perfil/perfil.html" class="item-menu">
+                    <img src="../img/icones/user.svg" alt="">
+                    <p>Perfil</p>
+                </a>
+                <a href="" class="item-menu">
+                    <img src="../img/icones/assinatura.svg" alt="">
+                    <p>Assinaturas</p>
+                </a>
+                <a href="../Termos/termo.html" class="item-menu">
+                    <img src="../img/icones/suporte.svg" alt="">
+                    <p>Suporte</p>
+                </a>
+                <a href="../Visitantes/visitantes.html" class="item-menu">
+                    <img src="../img/icones/sair.svg" alt="">
+                    <p>Sair</p>
+                </a>
+                <a href="">
+
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <aside>
+        <div class="topo">
+            <h1>MusicHub</h1>
+        </div>
+
+        <div class="conteudo">
+            <h3 class="item-menu">Menu</h3>
+            <a href="../Home/index.html" class="item-menu ativo">
+                <img src="../img/icones/exploreIcon.svg" alt="">
+                <span>Explore</span>
+            </a>
+            <a href="#generos" class="item-menu">
+                <img src="../img/icones/generoIcon.svg" alt="">
+                <span>Gênero</span>
+            </a>
+            <a href="#albuns" class="item-menu">
+                <img src="../img/icones/albunsIcon.svg" alt="">
+                <span>Álbuns</span>
+            </a>
+            <a href="#artistas" class="item-menu">
+                <img src="../img/icones/artistasIcon.svg" alt="">
+                <span>Artistas</span>
+            </a>
+            <a href="../Social/social.html" class="item-menu">
+                <img src="../img/icones/socialIcon.svg" alt="">
+                <span>Social</span>
+            </a>
+
+            <h3 class="item-menu">Biblioteca</h3>
+            <a href="" class="item-menu">
+                <img src="../img/icones/recentesIcon.svg" alt="">
+                <span>Recentes</span>
+            </a>
+            <a href="../Playrists/playrist.html" class="item-menu">
+                <img src="../img/icones/baixadosIcon.svg" alt="">
+                <span>Baixados</span>
+            </a>
+            <a href="../Playrists/playrist.html" class="item-menu">
+                <img src="../img/icones/favoritosIcon.svg" alt="">
+                <span>Favoritos</span>
+            </a>
+
+            <h3 class="item-menu">Playlists</h3>
+            <a href="" class="item-menu">
+                <img src="../img/icones/favoritosIcon.svg" alt="">
+                <span>Favoritos</span>
+            </a>
+            <a href="" class="item-menu">
+                <img src="../img/icones/iconePlayrist.png" alt="">
+                <span>Playlist 1</span>
+            </a>
+            <a href="" class="item-menu">
+                <img src="../img/icones/iconePlayrist.png" alt="">
+                <span>Playlist 2</span>
+            </a>
+        </div>
+    </aside>
+    <div class="banner">
+        <img src="../img/banner.webp" alt="">
+
+        <div class="banner-conteudo">
+            <h1>Social</h1>
+            <h2>Encontre sua próxima playlist favorita</h2>
+            <p>Descubra playlists compartilhadas por pessoas com gostos parecidos com o seu.</p>
+
+            <button class="btn">
+                Ver matches
+                <img src="../img/icones/brilhosIcon.svg" alt="">
+            </button>
+        </div>
+    </div>
+
+    <section class="compartilhada">
+        <h3>Playlists Compartilhadas</h3>
+
+        <div class="playlists-compartilhadas">
+            <div class="card-compartilhada">
+                <div class="banner-card">
+                    <img src="../img/bannerzinho.png" alt="" id="bannerzinho">
+                    <img src="../img/icones/favoritosIcon.svg" alt="" id="favorito">
+                    <h4>Nome1</h4>
+                </div>
+                <div class="conteudo-compartilhada">
+
+                    <div class="pessoas">
+                        <div class="bolinhas">
+                            <img src="../img/usuario1.jpg" alt="Usuário 1">
+                            <img src="../img/usuario2.jpg" alt="Usuário 2">
+                            <img src="../img/usuario3.jpg" alt="Usuário 3">
+                        </div>
+
+                        <p>0 pessoas</p>
+                    </div>
+                    
+                    <div class="descricao-compartilhada">
+                        
+                        <p>Descrição da playlist</p>
+                        <div class="conteudo-descricao-compartilhada">
+                        <p>Genero1</p> 
+                        <p>•</p>
+                        <p>Genero2</p> 
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
